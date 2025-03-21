@@ -11,10 +11,22 @@
 	--stone-100: #f5f5f4;
 	--stone-50: #fafaf9;
 
+	--light: #efe9f0;
+	--black: #000;
+
+	--brand: #005e24;
+	--brand-light: #d4e8d1;
+	--brand-border: #919282;
+
 	--amber-400: #fbbf24;
 
 	--cyan-300: #67e8f9;
 	--cyan-100: #cffafe;
+
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+	font-size: 11px;
 }
 
 .light-theme {
@@ -23,7 +35,7 @@
 
 	--header-background: var(--stone-200);
 
-	--theme-icon-color: var(--amber-400);
+	--main-svg-color: var(--black);
 }
 
 .dark-theme {
@@ -32,5 +44,5 @@
 
 	--header-background: var(--stone-800);
 
-	--theme-icon-color: var(--cyan-100);
+	--main-svg-color: var(--light);
 }

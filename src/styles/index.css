@@ -11,21 +11,6 @@ body {
 	padding: 0;
 }
 
-header {
-	width: 100%;
-}
-
-header nav {
-	display: flex;
-	flex-direction: row;
-
-	padding: 8px;
-
-	justify-content: space-between;
-
-	background: var(--header-background);
-}
-
 .button {
 	all: unset;
 
