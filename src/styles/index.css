@@ -1,6 +1,8 @@
 html {
 	height: 100dvh;
 	width: 100dvw;
+	display: flex;
+	flex-direction: column;
 
 	margin: 0;
 	padding: 0;
@@ -9,6 +11,10 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
 }
 
 .button {
