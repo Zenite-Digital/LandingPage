@@ -17,6 +17,10 @@ body {
 	flex-direction: column;
 }
 
+html, body {
+	overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
 .button {
 	all: unset;
 

@@ -6,9 +6,11 @@
 		<link rel="stylesheet" href="./styles/index.css" />
 		<link rel="stylesheet" href="./styles/root-styles.css" />
 		<link rel="stylesheet" href="./styles/header.css" />
+		<link rel="stylesheet" href="./styles/carrousel.css" />
 		<script src="./scripts/index.js"></script>
 		<script src="./scripts/theme-toggler.js"></script>
 		<script src="./scripts/grouped-button.js"></script>
+		<script src="./scripts/carrousel.js" defer></script>
 		<title>Início</title>
 	</head>
 	<body>
@@ -52,8 +54,21 @@
 			</nav>
 		</header>
 
-		<main>
-			<div class="carrousel"></div>
+		<main style="margin: 0; padding: 0; box-sizing: border-box;">
+			<div class="carrousel">
+				<button class="arrow left" onclick="prevSlide()">&#10094</button>
+				<button class="arrow right" onclick="nextSlide()">&#10095</button>
+
+				<img src="./assets/imgs/gado_tui.jpg" alt="gado" class="slide active">
+				<img src="./assets/imgs/gado(1).jpg" alt="gado" class="slide">
+				<img src="./assets/imgs/gado(2).jpg" alt="gado" class="slide">
+
+				<div class="dots">
+					<span class="dot active" onclick="goToSlide(0)"></span>
+					<span class="dot" onclick="goToSlide(1)"></span>
+					<span class="dot" onclick="goToSlide(2)"></span>
+				</div>
+			</div>
 		</main>
 	</body>
 </html>
