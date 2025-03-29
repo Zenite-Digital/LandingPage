@@ -17,10 +17,6 @@ body {
 	flex-direction: column;
 }
 
-html, body {
-	overflow: hidden; /* Prevent scrollbars from appearing */
-}
-
 main{
 	margin: 0;
 	padding: 0;

@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(nextSlide, 5000);
+    showSlide(currentSlide)
+    startSlideInterval();
 });
 
 let currentSlide = 0;
@@ -17,19 +18,29 @@ function showSlide(index) {
 }
 
 function nextSlide() {
+    restartSlideInterval();
     currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
-    setTimeout(nextSlide, 5000);
 
 }
 
 function prevSlide() {
+    restartSlideInterval();
     const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
     showSlide(prevIndex);
 }
 
 function goToSlide(index) {
     showSlide(index);
+}
+
+function startSlideInterval() {
+    slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+}
+
+function restartSlideInterval(){
+    clearInterval(slideInterval);
+    startSlideInterval();
 }
 
 // Initialize the carrousel

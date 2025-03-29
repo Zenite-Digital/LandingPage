@@ -1,80 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./styles/index.css" />
-		<link rel="stylesheet" href="./styles/root-styles.css" />
-		<link rel="stylesheet" href="./styles/header.css" />
-		<link rel="stylesheet" href="./styles/carrousel.css" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
-		<link rel="icon" type="image/x-icon" href="./assets/icons/icon.png" />
-		<script src="./scripts/index.js"></script>
-		<script src="./scripts/theme-toggler.js"></script>
-		<script src="./scripts/grouped-button.js"></script>
-		<script src="./scripts/carrousel.js" defer></script>
-		<title>Zênite Digital</title>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<div id="header-left-buttons">
-					<div class="side-menu-container">
-						<button
-							id="toggle-side-menu-btn"
-							title="Menu Lateral"
-							class="menu-btn button icon-btn"
-						>
-							<svg
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z"
-									fill="var(--main-svg-color)"
-								/>
-							</svg>
-						</button>
-					</div>
-					<div id="company-header-logo"></div>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./styles/index.css" />
+	<link rel="stylesheet" href="./styles/root-styles.css" />
+	<link rel="stylesheet" href="./styles/header.css" />
+	<link rel="stylesheet" href="./styles/carrousel.css" />
+	<link rel="stylesheet" href="./styles/product-info.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+	<link rel="icon" type="image/x-icon" href="./assets/icons/icon.png" />
+	<script src="./scripts/index.js"></script>
+	<script src="./scripts/theme-toggler.js"></script>
+	<script src="./scripts/grouped-button.js"></script>
+	<script src="./scripts/carrousel.js" defer></script>
+	<script src="./scripts/product-info.js"></script>
+	<title>Zênite Digital</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div id="header-left-buttons">
+				<div class="side-menu-container">
+					<button id="toggle-side-menu-btn" title="Menu Lateral" class="menu-btn button icon-btn">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="var(--main-svg-color)" />
+						</svg>
+					</button>
 				</div>
-
-				<div id="header-right-buttons">
-					<div class="grouped-buttons">
-						<button title="" class="grouped-btn-header">Nossos Produtos</button>
-						<button title="" class="grouped-btn-header">FAQ</button>
-						<button title="" class="grouped-btn-header">Contato</button>
-						<button title="" class="grouped-btn-header">Sobre</button>
-					</div>
-					<button
-						id="theme-toggler-btn"
-						title="Menu Lateral"
-						class="menu-btn button icon-btn"
-					></button>
-				</div>
-			</nav>
-		</header>
-
-		<main style="margin: 0; padding: 0; box-sizing: border-box;">
-			<div class="carrousel">
-				<button class="arrow left" onclick="prevSlide()">&#10094</button>
-				<button class="arrow right" onclick="nextSlide()">&#10095</button>
-
-				<img src="./assets/imgs/gado_tui.jpg" alt="gado" class="slide active">
-				<img src="./assets/imgs/gado(1).jpg" alt="gado" class="slide">
-				<img src="./assets/imgs/gado(2).jpg" alt="gado" class="slide">
-
-				<div class="dots" style="text-align: center">
-					<span class="dot active" onclick="goToSlide(0)"></span>
-					<span class="dot" onclick="goToSlide(1)"></span>
-					<span class="dot" onclick="goToSlide(2)"></span>
-				</div>
-		
+				<div id="company-header-logo"></div>
 			</div>
-			<div class="divider"></div>
-		</main>
-	</body>
+
+			<div id="header-right-buttons">
+				<div class="grouped-buttons">
+					<button onclick="scrollToAnchor_produtos()" title="" class="grouped-btn-header">Nossos Produtos</button>
+					<button title="" class="grouped-btn-header">FAQ</button>
+					<button title="" class="grouped-btn-header">Contato</button>
+					<button title="" class="grouped-btn-header">Sobre</button>
+				</div>
+				<button id="theme-toggler-btn" title="Menu Lateral" class="menu-btn button icon-btn"></button>
+			</div>
+		</nav>
+	</header>
+
+	<main style="margin: 0; padding: 0; box-sizing: border-box;">
+		<div class="carrousel">
+			<button class="arrow left" onclick="prevSlide()">&#10094</button>
+			<button class="arrow right" onclick="nextSlide()">&#10095</button>
+
+			<img src="./assets/imgs/gado_tui.jpg" alt="gado" class="slide active">
+			<img src="./assets/imgs/gado(1).jpg" alt="gado" class="slide">
+			<img src="./assets/imgs/gado(2).jpg" alt="gado" class="slide">
+
+			<div class="dots" style="text-align: center">
+				<span class="dot active" onclick="goToSlide(0)"></span>
+				<span class="dot" onclick="goToSlide(1)"></span>
+				<span class="dot" onclick="goToSlide(2)"></span>
+			</div>
+
+		</div>
+		<div class="divider"></div>
+		<div id="product" class="about-product-container">
+			<div class="about-product">
+				<div class="about-product-img">
+					<img src="./assets/imgs/App icon.png" alt="Icone GadOn">
+				</div>
+				<div class="product-content">
+					<h1>GadOn</h1>
+					<p class="subititle">Seu app de controle de Gado</p>
+					<button class="download-btn">Download</button>
+					<div class="product-accordion">
+						<div class="accordion-header">
+							<h3>Sobre</h3>
+							<span class="accordion-icon">▲</span>
+						</div>
+						<div class="accordion-content">
+							<p>O GadOn é um aplicativo desenvolvido para facilitar o controle e a gestão do seu rebanho.
+								Com ele, você pode registrar informações sobre cada animal, acompanhar seu histórico de
+								saúde e vacinação, e muito mais.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
 </html>
