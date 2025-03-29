@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(nextSlide, 5000);
+});
+
 let currentSlide = 0;
 const slides = document.querySelectorAll('.carrousel .slide');
 const dots = document.querySelectorAll('.carrousel .dot');
@@ -15,6 +19,8 @@ function showSlide(index) {
 function nextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
+    setTimeout(nextSlide, 5000);
+
 }
 
 function prevSlide() {

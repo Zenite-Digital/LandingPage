@@ -21,6 +21,12 @@ html, body {
 	overflow: hidden; /* Prevent scrollbars from appearing */
 }
 
+main{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 .button {
 	all: unset;
 
@@ -48,4 +54,8 @@ html, body {
 	height: 48px;
 
 	padding: 0;
+}
+
+html .dark-theme{
+	background-color: var(--stone-800);
 }

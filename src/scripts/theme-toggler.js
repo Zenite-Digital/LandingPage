@@ -43,7 +43,7 @@ function init() {
 		document.body.classList.add(lightTheme ? "light-theme" : "dark-theme");
 		document.body.classList.remove(!lightTheme ? "light-theme" : "dark-theme");
 
-		themeTogglerBtn.innerHTML = lightTheme ? svgs.sun : svgs.moon;
+		themeTogglerBtn.innerHTML = lightTheme ? svgs.moon : svgs.sun;
 		logoContainer.innerHTML = lightTheme ? svgs.darkZenite : svgs.lightZenite;
 	}
 

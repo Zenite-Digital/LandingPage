@@ -8,7 +8,7 @@ header nav {
 	display: flex;
 	flex-direction: row;
 
-	padding: 8px;
+	padding: 20px 80px 20px 80px;
 
 	justify-content: space-between;
 
@@ -26,6 +26,11 @@ header nav {
 	gap: 20px;
 }
 
+.side-menu-container{
+    display: none;
+}
+
+
 .grouped-buttons {
 	display: flex;
 	align-items: center;
@@ -35,6 +40,9 @@ header nav {
 	all: unset;
 	-webkit-user-select: none;
 	user-select: none;
+	font-family: "poppins", sans-serif;
+	font-weight: 500;
+	font-size: medium;
 
 	display: flex;
 	justify-content: center;
@@ -47,7 +55,7 @@ header nav {
 	border: 1px solid var(--brand-border);
 
 	cursor: pointer;
-	color: var(--brand);
+	color: var(--stone-950);
 
 	&:first-child {
 		border-radius: 1000px;
@@ -70,8 +78,25 @@ header nav {
 	color: white;
 }
 
+.dark-theme .grouped-buttons button:hover {
+	background-color: var(--stone-700);
+}
+
 .grouped-buttons button.active,
 .grouped-buttons button:active {
 	background-color: var(--brand);
 	color: var(--brand-light);
+}
+
+@media (max-width: 850px) {
+	.grouped-buttons{
+		display: none;
+	}
+	header nav {
+		padding: 20px 20px 20px 20px;
+	}
+
+	.side-menu-container{
+		display: flex;
+	}
 }
