@@ -3,29 +3,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const accordionIcon = document.querySelector('.accordion-icon');
     const accordionContent = document.querySelector('.accordion-content');
 
-    // accordionContent.computedStyleMap.display = 'block';
+    accordionContent.style.display = 'none';
+    accordionContent.style.maxHeight = '0';
+    accordionContent.style.overflow = 'hidden';
+    accordionContent.style.transition = 'max-height 0.3s ease';
 
-    const style = getComputedStyle(accordionContent);
-    if(style.display === 'block'){
-        accordionContent.style.display = 'none';
-        accordionIcon.style.transform = 'rotate(180deg)';
-    }
-
-    accordionHeader.addEventListener('click', function(){
-        const style = getComputedStyle(accordionContent);
-        if(style.display === 'block') {
-            accordionContent.style.display = 'none';
-            accordionIcon.style.transform = 'rotate(180deg)';
-
-        }
-        else {
+    accordionHeader.addEventListener('click', function() {
+        if (accordionContent.style.display === 'none') {
             accordionContent.style.display = 'block';
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
             accordionIcon.style.transform = 'rotate(0deg)';
+        } else {
+            accordionContent.style.maxHeight = '0';
+            accordionIcon.style.transform = 'rotate(180deg)';
+            setTimeout(function() {
+                accordionContent.style.display = 'none';
+            }, 300);
         }
     });
 
     const downloadBtn = document.querySelector('.download-btn');
-    downloadBtn.addEventListener('click', function(){
-        open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-    })
-})
+    downloadBtn.addEventListener('click', function() {
+        open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+    });
+});

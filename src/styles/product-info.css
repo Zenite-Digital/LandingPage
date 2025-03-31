@@ -105,6 +105,7 @@
     padding: 16px;
     line-height: 1.6;
     color: var(--stone-700);
+    transition: max-height 0.3s ease-out;
 }
 
 @media (max-width: 850px) {
@@ -117,5 +118,9 @@
         width: 100%;
         padding: 0;
         justify-content: center;
+    }
+    .product-content{
+        width: 80%;
+        padding: 0;
     }
 }
