@@ -8,6 +8,10 @@
     gap: 10px;
 }
 
+.about-product-container{
+    scroll-margin-top: 80px;
+}
+
 .product-content h1{
     margin-bottom: 8px;
     font-size: 40px;
@@ -106,6 +110,10 @@
     line-height: 1.6;
     color: var(--stone-700);
     transition: max-height 0.3s ease-out;
+}
+
+.accordion-content p{
+    font-size: 16px;
 }
 
 @media (max-width: 850px) {
