@@ -80,7 +80,7 @@
     filter: invert(1);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
     .functions_column {
         width: 100%;
         display: block;

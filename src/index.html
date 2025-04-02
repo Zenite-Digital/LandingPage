@@ -12,11 +12,13 @@
 	<link rel="stylesheet" href="./styles/functions-section.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
 	<link rel="icon" type="image/x-icon" href="./assets/icons/icon.png" />
+	<link rel="stylesheet" href="./styles/side-menu.css">
 	<script src="./scripts/index.js"></script>
 	<script src="./scripts/theme-toggler.js"></script>
 	<script src="./scripts/grouped-button.js"></script>
 	<script src="./scripts/carrousel.js" defer></script>
 	<script src="./scripts/product-info.js"></script>
+	<script src="./scripts/side-menu.js"></script>
 	<title>Zênite Digital</title>
 </head>
 
@@ -48,6 +50,17 @@
 	</header>
 
 	<main style="margin: 0; padding: 0; box-sizing: border-box;">
+		<div class="side-navigation-menu" id="side-menu">
+			<a href="javascript:void(0)" class="side-menu-close-btn" onclick="closeNav()">&times;</a>
+			<div class="side-menu-content">
+				<a href="#" class="side-menu-logo"><img src="./assets/icons/icon.png" alt="Logo GadOn"></a>
+				<a href="#" id="side-menu-product-button">Nossos Produtos</a>
+				<a href="#">FAQ</a>
+				<a href="#">Contato</a>
+				<a href="#">Sobre</a>
+			</div>
+		</div>
+
 		<div class="carrousel">
 			<button class="arrow left" onclick="prevSlide()">&#10094</button>
 			<button class="arrow right" onclick="nextSlide()">&#10095</button>
