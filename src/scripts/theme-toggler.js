@@ -35,21 +35,25 @@ const svgs = {
 let lightTheme;
 
 function init() {
+	lightTheme = sessionStorage.getItem("light-theme") === "true";
 	const themeTogglerBtn = document.getElementById("theme-toggler-btn");
 	const logoContainer = document.getElementById("company-header-logo");
 
-	function handleChangeTheme() {
-		lightTheme = !lightTheme;
+	function handleChangeTheme({ firstLoad = false }) {
+		if (!firstLoad) {
+			lightTheme = !lightTheme;
+		}
 		document.body.classList.add(lightTheme ? "light-theme" : "dark-theme");
 		document.body.classList.remove(!lightTheme ? "light-theme" : "dark-theme");
 
 		themeTogglerBtn.innerHTML = lightTheme ? svgs.moon : svgs.sun;
 		logoContainer.innerHTML = lightTheme ? svgs.darkZenite : svgs.lightZenite;
+		sessionStorage.setItem("light-theme", lightTheme);
 	}
 
 	themeTogglerBtn.onclick = handleChangeTheme;
 
-	handleChangeTheme();
+	handleChangeTheme({ firstLoad: true });
 }
 
 window.addEventListener("load", init);
