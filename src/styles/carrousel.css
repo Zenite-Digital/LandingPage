@@ -5,10 +5,9 @@
 	align-items: center;
 	position: relative;
 	min-width: 100%;
-	min-height: 50%;
+	height: 44dvh;
 	height: 500px;
 	width: 100%;
-	/* aspect-ratio: 16 / 9; */
 	overflow: hidden;
 	z-index: 0;
 }
@@ -113,6 +112,6 @@
 
 @media screen and (max-width: 850px) {
 	.carrousel {
-		height: 400px;
+		height: 80dvh;
 	}
 }
