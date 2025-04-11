@@ -1,7 +1,6 @@
 .contact-section {
     padding: 40px;
     background-color: var(--stone-100);
-    justify-content: center;
     text-align: center;
 }
 
@@ -22,21 +21,10 @@
 
 .contact-form {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     gap: 15px;
+    max-width: 500px;
     margin: 0 auto;
-    max-width: 80vh;
-    box-sizing: border-box;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    font-size: 1rem;
 }
 
 .contact-form input,
@@ -56,6 +44,7 @@
 }
 
 .contact-form button {
+    width: 97%;
     background-color: var(--brand);
     color: white;
     border: none;
@@ -84,16 +73,4 @@
 
 .contact-info a:hover {
     text-decoration: underline;
-}
-
-button:focus,
-input:focus, textarea:focus {
-    outline: 3px solid #00ffcc;
-    outline-offset: 2px;
-}
-
-@media (max-width: 768px) {
-    .contact-form {
-        max-width: 600px;
-    }
 }
