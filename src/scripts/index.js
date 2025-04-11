@@ -15,11 +15,4 @@ function scrollToAnchor(){
             block: 'start',
         });
     });
-    const contactButton = document.getElementById('contactButton');
-    contactButton.addEventListener('click', function() {
-        document.getElementById('contact').scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-        });
-    });
 }
