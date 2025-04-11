@@ -5,11 +5,12 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Open Graph -->
-    <meta property="og:title" content="GadOn - Seu App de Controle de Gado">
-    <meta property="og:description" content="Gerencie sua propriedade com o GadOn, o app de gestão de pastagem mais eficiente.">
-    <meta property="og:image" content="./assets/icons/App icon.png">
-    <!-- <meta property="og:url" content="https://www.seusite.com"> Não tem url definida ainda-->
-    <meta property="og:type" content="website">
+	<meta property="og:title" content="GadOn - Seu App de Controle de Gado">
+	<meta property="og:description"
+		content="Gerencie sua propriedade com o GadOn, o app de gestão de pastagem mais eficiente.">
+	<meta property="og:image" content="./assets/icons/App icon.png">
+	<!-- <meta property="og:url" content="https://www.seusite.com"> Não tem url definida ainda-->
+	<meta property="og:type" content="website">
 
 	<link rel="stylesheet" href="./styles/index.css" />
 	<link rel="stylesheet" href="./styles/root-styles.css" />
@@ -22,6 +23,7 @@
 	<link rel="stylesheet" href="./styles/feedback-section.css">
 	<link rel="stylesheet" href="./styles/side-menu.css">
 	<link rel="stylesheet" href="./styles/contact.css">
+	<link rel="stylesheet" href="./styles/faq-section.css">
 	<script src="./scripts/index.js"></script>
 	<script src="./scripts/theme-toggler.js"></script>
 	<script src="./scripts/grouped-button.js"></script>
@@ -74,9 +76,15 @@
 			<button class="arrow left" onclick="prevSlide()">&#10094</button>
 			<button class="arrow right" onclick="nextSlide()">&#10095</button>
 
-			<img src="./assets/imgs/gado_tui.jpg" alt="Vista de vários bois agrupados em um cocho, com a estrutura de um trator ou carregadeira visível em primeiro plano." class="slide active">
-			<img src="./assets/imgs/gado(1).jpg" alt="Grande quantidade de bois brancos reunidos em uma área de alimentação no campo sob um céu azul com poucas nuvens." class="slide">
-			<img src="./assets/imgs/gado(2).jpg" alt="Bovinos brancos se alimentando em um cocho ao ar livre, com o sol baixo no horizonte e árvores ao fundo." class="slide">
+			<img src="./assets/imgs/gado_tui.jpg"
+				alt="Vista de vários bois agrupados em um cocho, com a estrutura de um trator ou carregadeira visível em primeiro plano."
+				class="slide active">
+			<img src="./assets/imgs/gado(1).jpg"
+				alt="Grande quantidade de bois brancos reunidos em uma área de alimentação no campo sob um céu azul com poucas nuvens."
+				class="slide">
+			<img src="./assets/imgs/gado(2).jpg"
+				alt="Bovinos brancos se alimentando em um cocho ao ar livre, com o sol baixo no horizonte e árvores ao fundo."
+				class="slide">
 
 			<div class="dots" style="text-align: center">
 				<span class="dot active" onclick="goToSlide(0)"></span>
@@ -195,7 +203,9 @@
 						</div>
 						<div class="feedback-card-content">
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus odio, illum ratione at nisi mollitia.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
+								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
+								odio, illum ratione at nisi mollitia.
 							</p>
 						</div>
 					</div>
@@ -210,7 +220,9 @@
 						</div>
 						<div class="feedback-card-content">
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus odio, illum ratione at nisi mollitia.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
+								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
+								odio, illum ratione at nisi mollitia.
 							</p>
 						</div>
 					</div>
@@ -225,7 +237,9 @@
 						</div>
 						<div class="feedback-card-content">
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus odio, illum ratione at nisi mollitia.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
+								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
+								odio, illum ratione at nisi mollitia.
 							</p>
 						</div>
 					</div>
@@ -240,7 +254,9 @@
 						</div>
 						<div class="feedback-card-content">
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus odio, illum ratione at nisi mollitia.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
+								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
+								odio, illum ratione at nisi mollitia.
 							</p>
 						</div>
 					</div>
@@ -254,18 +270,41 @@
 			<form action="[precisa definir o email de contato]" method="post" enctype="text/plain" class="contact-form">
 				<label for="name">Nome:</label>
 				<input type="text" id="name" name="name" placeholder="Seu nome" required />
-		
+
 				<label for="email">E-mail:</label>
 				<input type="email" id="email" name="email" placeholder="Seu e-mail" required />
-		
+
 				<label for="message">Mensagem:</label>
-				<textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required maxlength="200"></textarea>
-		
+				<textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required
+					maxlength="200"></textarea>
+
 				<button type="submit" class="button">Enviar</button>
 			</form>
 			<div class="contact-info">
 				<p>E-mail: <a href="mailto:aiai@email.com">aiai@email.com</a></p>
-				<p>WhatsApp: <a href="https://wa.me/[numeroWhatsapp]" target="_blank">[número de contato a definir]</a></p>
+				<p>WhatsApp: <a href="https://wa.me/[numeroWhatsapp]" target="_blank">[número de contato a definir]</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="faq-section">
+			<div class="faq-title">
+				<h2>FAQ</h2>
+				<p class="subititle">Perguntas frequentes.</p>
+			</div>
+
+			<div class="faq-accordions">
+				<div class="accordions">
+					<div class="accordion-header">
+						<h3>Pergunta 1</h3>
+						<span class="accordion-icon">▲</span>
+					</div>
+					<div class="accordion-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minima ipsa quasi nesciunt
+							provident asperiores fugit recusandae esse, laboriosam veritatis molestiae? Fuga at laborum
+							sequi alias obcaecati! Voluptatem, enim obcaecati.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>
