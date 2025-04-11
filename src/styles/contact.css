@@ -4,6 +4,11 @@
     text-align: center;
 }
 
+.dark-theme .contact-section {
+    background-color: var(--stone-800);
+    color: #fff;
+}
+
 .contact-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
