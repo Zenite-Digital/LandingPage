@@ -43,7 +43,8 @@
 }
 
 .contact-form button {
-    background-color: var(--btn-background);
+    width: 97%;
+    background-color: var(--brand);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -51,8 +52,12 @@
     cursor: pointer;
 }
 
+.light-theme .contact-form button {
+    background-color: var(--brand);
+}
+
 .contact-form button:hover {
-    background-color: var(--btn-background-hover);
+    background-color: #00501f;
 }
 
 .contact-info {
