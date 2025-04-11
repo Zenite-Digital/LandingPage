@@ -38,6 +38,7 @@
 
 .contact-form textarea {
     max-height: 200px;
+    min-height: 50px;
     resize: vertical;
     overflow-y: auto;
 }
