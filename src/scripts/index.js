@@ -22,4 +22,11 @@ function scrollToAnchor(){
             block: 'start',
         });
     });
+    const faqButton = document.getElementById('faqButton');
+    faqButton.addEventListener('click', function() {
+        document.getElementById('faq').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    });
 }
