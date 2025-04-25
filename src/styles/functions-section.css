@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 24px;
-    padding-left: 12%;
+    padding-left: 6%;
 }
 
 .functions_column {
@@ -89,7 +89,10 @@
         width: 100%;
     }
     .functions_row {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .card {
         margin-bottom: 20px;
