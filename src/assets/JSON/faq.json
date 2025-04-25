@@ -1,23 +1,4 @@
 [
-    {
-        "question": "What is the purpose of this project?",
-        "answer": "The purpose of this project is to provide a platform for users to ask questions and get answers from the community."
-    },
-    {
-        "question": "How do I create an account?",
-        "answer": "To create an account, click on the 'Sign Up' button on the homepage and fill out the required information."
-    },
-    {
-        "question": "How do I reset my password?",
-        "answer": "To reset your password, click on the 'Forgot Password?' link on the login page and follow the instructions."
-    },
-    {
-        "question": "How do I ask a question?",
-        "answer": "To ask a question, click on the 'Ask a Question' button and fill out the form with your question details."
-    },
-    {
-        "question": "How do I answer a question?",
-        "answer": "To answer a question, click on the question you want to answer and fill out the answer form."
-    }
+
     
 ]

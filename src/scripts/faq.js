@@ -21,22 +21,30 @@ async function loadFAQ() {
             const accordionHeader = document.createElement('div');
             accordionHeader.className = 'accordion-header';
             accordionHeader.id = `header-faq-${index}`;
+            accordionHeader.setAttribute('type', 'button');
+            accordionHeader.setAttribute('aria-expanded', 'false');
+            accordionHeader.setAttribute('aria-controls', `resposta-faq-${index}`);
             
             // Criar o título
             const accordionTitle = document.createElement('h3');
             accordionTitle.className = 'accordion-title';
             accordionTitle.id = `faq-title-${index}`;
             accordionTitle.textContent = item.question;
+            accordionTitle.setAttribute('aria-expanded', 'false');
+            accordionTitle.setAttribute('aria-controls', `resposta-faq-${index}`);
             
             // Criar o ícone
             const accordionIcon = document.createElement('span');
             accordionIcon.className = 'accordion-icon';
             accordionIcon.textContent = '▼';
+            accordionIcon.setAttribute('aria-hidden', 'true');
             
             // Criar o container de conteúdo
             const accordionContent = document.createElement('div');
             accordionContent.className = 'accordion-content';
             accordionContent.id = `resposta-faq-${index}`;
+            accordionContent.setAttribute('aria-labelledby', `header-faq-${index}`);
+            accordionContent.setAttribute('role', 'region');
             accordionContent.style.display = 'none';
             accordionContent.style.paddingBottom = '10px';
             accordionContent.style.maxHeight = '0';
