@@ -1,6 +1,10 @@
 @import url('./root-styles.css');
 
 .plans-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
     padding: 40px;
     background-color: var(--stone-100);
     text-align: center;
@@ -26,6 +30,9 @@
     width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .plan-card h3 {
@@ -71,6 +78,11 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
 }
 
 .plan-card .subscribe-btn:hover {
