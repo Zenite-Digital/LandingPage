@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     const accordionHeaders = document.querySelectorAll('.accordion-header');
     
     accordionHeaders.forEach(header => {
         const accordionIcon = header.querySelector('.accordion-icon');
         const accordionContent = header.nextElementSibling;
 
-        // Inicializa o estilo do conteúdo do acordeão
         accordionContent.style.display = 'none';
         accordionContent.style.maxHeight = '0';
         accordionContent.style.overflow = 'hidden';
@@ -25,10 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-});
 
-
+    // Funcionalidade do botão de download
     const downloadBtn = document.querySelector('.download-btn');
-    downloadBtn.addEventListener('click', function() {
-        open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
-    });
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', function() {
+            window.location.href = "./not-found.html"; // Altere para o caminho correto do arquivo a ser baixado
+        });
+    } else {
+        console.error('Botão de download não encontrado na página');
+    }
+});
