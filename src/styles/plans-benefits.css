@@ -1,25 +1,60 @@
-@import url('./root-styles.css');
+@import url("./root-styles.css");
+.dark-theme {
+    .plans-section {
+        background-color: var(--stone-700);
+    }
+
+    .plan-card {
+        border-color: var(--stone-500);
+    }
+
+    .plan-card h3 {
+        color: white;
+    }
+
+    .plan-card .price span,
+    .plan-card .description,
+    .plan-card ul li {
+        color: var(--stone-300);
+    }
+
+    .plans-container h2 {
+        color: white;
+    }
+}
 
 .plans-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    justify-items: center;
     justify-content: center;
     gap: 30px;
     align-items: center;
     padding: 40px;
     background-color: var(--stone-100);
     text-align: center;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 340px;
+
+    border-radius: 8px;
 }
 
-.plans-section h2 {
+.plans-container h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    align-self: center;
 }
 
 .plans-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+
+    padding-bottom: 40px;
 }
 
 .plan-card {
