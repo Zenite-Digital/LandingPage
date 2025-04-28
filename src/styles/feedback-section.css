@@ -1,26 +1,27 @@
-.feedback-section{
+.feedback-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding-bottom: 25px;
 }
 
-.feedback-container{
+.feedback-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
-.feedback-cards{
+.feedback-cards {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
 }
 
-.card img{
+.card img {
     width: 20%;
     border-radius: 100%;
     border: 5px;
@@ -29,14 +30,14 @@
     margin: 10px;
 }
 
-.feedback-card-header{
+.feedback-card-header {
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
     margin: 10px;
 
-    & h3{
+    & h3 {
         margin-left: 10px;
         font-size: 1.5rem;
         color: var(--stone-900);
@@ -44,8 +45,7 @@
         margin: 0;
     }
 
-    & p{
-        
+    & p {
         margin-left: 10px;
         font-size: 1rem;
         color: var(--stone-500);
@@ -54,46 +54,45 @@
     }
 }
 
-.feedback-user-info{
+.feedback-user-info {
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: start;
 }
 
-.feedback-card-content{
+.feedback-card-content {
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: start;
     margin-left: 10px;
     margin-right: 10px;
-    
+
     text-align: justify;
 }
 
-.dark-theme .feedback-card-header h3{
+.dark-theme .feedback-card-header h3 {
     color: white;
 }
-.dark-theme .feedback-card-header p{
+.dark-theme .feedback-card-header p {
     color: var(--light);
 }
 
 @media screen and (max-width: 850px) {
-    .feedback-container{
+    .feedback-container {
         flex-direction: column;
     }
-    .feedback-cards{
+    .feedback-cards {
         display: grid;
     }
-    .card img{
+    .card img {
         width: 25%;
     }
-    .feedback-card-header h3{
+    .feedback-card-header h3 {
         font-size: 1.8rem;
     }
-    .feedback-card-header p{
+    .feedback-card-header p {
         font-size: 1em;
     }
-    
 }
