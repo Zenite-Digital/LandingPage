@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sideMenuContainer = document.getElementById(
         "side-menu-nav-container"
     );
+    const sideMenuBackdrop = document.getElementById("navigation-backdrop");
     const toggleSideMenuBtn = document.getElementById("toggle-side-menu-btn");
     const sideMenu = document.getElementById("side-menu");
 
@@ -13,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
             closeNav();
         }
     });
+
+    sideMenuBackdrop.onclick = closeNav;
 });
 
 function openNav() {
