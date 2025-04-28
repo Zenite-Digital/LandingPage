@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <style>
+        :root {
+            --primary-color: #333;
+            --secondary-color: #666;
+            --accent-color: #4a90e2;
+            --background-color: #fff;
+            --section-background: #f9f9f9;
+            --border-color: #eaeaea;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background-color: var(--background-color);
+            padding: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .last-updated {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+
+        .policy-section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: var(--section-background);
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .policy-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        h2::after {
+            content: '+';
+            margin-left: auto;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        h2.active::after {
+            content: '−';
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .section-content.active {
+            max-height: 1000px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .contact p {
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--section-background);
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            z-index: 100;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--border-color);
+        }
+
+        .dark-mode {
+            --primary-color: #f0f0f0;
+            --secondary-color: #b0b0b0;
+            --accent-color: #64b5f6;
+            --background-color: #121212;
+            --section-background: #1e1e1e;
+            --border-color: #333;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease, background-color 0.3s ease;
+            z-index: 100;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+        }
+
+        .back-to-top:hover {
+            background-color: #3a7bc8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .policy-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-toggle" id="themeToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </div>
+    <div>
+        <a href="index.html" class="back-to-main" style="display: inline-block; margin-bottom: 20px; text-decoration: none; color: #005e24; font-weight: bold; padding: 25px;">← Voltar para a Página Principal</a>
+        
+    </div>
+    
+    <button class="back-to-top" id="backToTop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <div class="container">
+        <header>
+            
+            <h1>Política de Privacidade</h1>
+            <div class="last-updated">Última atualização: 26 de abril de 2025</div>
+            <p class="intro">Valorizamos sua privacidade e estamos comprometidos em proteger suas informações pessoais. Esta política de privacidade explica como coletamos, usamos e protegemos seus dados.</p>
+        </header>
+
+        <div class="policy-section">
+            <h2>1. Introdução</h2>
+            <div class="section-content">
+                <p>Bem-vindo à nossa Política de Privacidade. Este documento explica como coletamos, usamos, armazenamos e protegemos suas informações quando você utiliza nosso site ou serviços.</p>
+                <p>Ao acessar ou usar nossos serviços, você concorda com os termos desta política. Recomendamos que você leia este documento com atenção para entender nossas práticas em relação aos seus dados pessoais.</p>
+            </div>
+        </div>
+
+        <div class="policy-section">
+            <h2>2. Informações que Coletamos</h2>
+            <div class="section-content">
+                <p>Podemos coletar os seguintes tipos de informações:</p>
+                <ul>
+                    <li><strong>Informações pessoais:</strong> Nome, endereço de e-mail, número de telefone e outras informações de contato que você nos fornece voluntariamente.</li>
+                    <li><strong>Informações de uso:</strong> Dados sobre como você interage com nosso site, incluindo páginas visitadas, tempo gasto no site e ações realizadas.</li>
+                    <li><strong>Informações do dispositivo:</strong> Tipo de dispositivo, sistema operacional, navegador e endereço IP.</li>
+                    <li><strong>Cookies e tecnologias similares:</strong> Utilizamos cookies e outras tecnologias para melhorar sua experiência e coletar informações sobre seu comportamento online.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="policy-section">
+            <h2>3. Como Usamos Suas Informações</h2>
+            <div class="section-content">
+                <p>Utilizamos suas informações para os seguintes fins:</p>
+                <ul>
+                    <li>Fornecer, manter e melhorar nossos serviços</li>
+                    <li>Processar transações e enviar notificações relacionadas</li>
+                    <li>Responder a suas solicitações, perguntas e comentários</li>
+                    <li>Personalizar sua experiência e fornecer conteúdo relevante</li>
+                    <li>Analisar tendências de uso e melhorar a funcionalidade do site</li>
+                    <li>Proteger contra atividades fraudulentas ou ilegais</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="policy-section">
+            <h2>4. Compartilhamento de Informações</h2>
+            <div class="section-content">
+                <p>Podemos compartilhar suas informações nas seguintes circunstâncias:</p>
+                <ul>
+                    <li><strong>Prestadores de serviços:</strong> Compartilhamos informações com empresas que nos ajudam a operar, fornecer e melhorar nossos serviços.</li>
+                    <li><strong>Conformidade legal:</strong> Podemos divulgar informações quando acreditamos, de boa fé, que a divulgação é necessária para cumprir a lei, proteger nossos direitos ou responder a processos legais.</li>
+                    <li><strong>Transações comerciais:</strong> Em caso de fusão, aquisição ou venda de ativos, suas informações podem ser transferidas como parte da transação.</li>
+                </ul>
+                <p>Não vendemos suas informações pessoais a terceiros.</p>
+            </div>
+        </div>
+
+        <div class="policy-section">
+            <h2>5. Seus Direitos</h2>
+            <div class="section-content">
+                <p>Você tem os seguintes direitos em relação às suas informações pessoais:</p>
+                <ul>
+                    <li>Acessar e receber uma cópia das suas informações pessoais</li>
+                    <li>Retificar informações imprecisas ou incompletas</li>
+                    <li>Solicitar a exclusão de suas informações pessoais</li>
+                    <li>Restringir ou opor-se ao processamento de suas informações</li>
+                    <li>Retirar seu consentimento a qualquer momento</li>
+                </ul>
+                <p>Para exercer qualquer um desses direitos, entre em contato conosco através das informações fornecidas na seção "Contato".</p>
+            </div>
+        </div>
+
+        <div class="policy-section">
+            <h2>6. Segurança</h2>
+            <div class="section-content">
+                <p>Implementamos medidas de segurança técnicas e organizacionais para proteger suas informações contra acesso não autorizado, perda acidental ou alteração. No entanto, nenhum método de transmissão pela Internet ou método de armazenamento eletrônico é 100% seguro.</p>
+            </div>
+        </div>
+
+        <div class="policy-section">
+            <h2>7. Alterações nesta Política</h2>
+            <div class="section-content">
+                <p>Podemos atualizar esta política periodicamente para refletir mudanças em nossas práticas ou por outros motivos operacionais, legais ou regulatórios. Notificaremos você sobre quaisquer alterações materiais publicando a nova política de privacidade em nosso site.</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Contato</h2>
+            <div class="section-content active">
+                <p>Se você tiver dúvidas ou preocupações sobre esta política de privacidade ou sobre como tratamos seus dados, entre em contato conosco:</p>
+                <p>Email: <a href="mailto:privacy@example.com">email@zenitedigital.com</a></p>
+                <p>Telefone: +55 (11) 1234-5678</p>
+                <p>Endereço: Av. José Felipe Tequinha, 1400 - Jardim das Nacoes, Paranavaí - PR</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle sections
+        document.querySelectorAll('.policy-section h2').forEach(heading => {
+            heading.addEventListener('click', () => {
+                const content = heading.nextElementSibling;
+                heading.classList.toggle('active');
+                content.classList.toggle('active');
+            });
+        });
+
+        // Automatically open the first section
+        document.querySelector('.policy-section h2').click();
+
+        // Dark mode toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
