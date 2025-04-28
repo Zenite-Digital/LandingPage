@@ -79,12 +79,35 @@
     color: var(--light);
 }
 
+@media screen and (max-width: 1080px) {
+    .feedback-container {
+        justify-content: start;
+        width: 100%;
+        overflow: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .card img {
+        width: 25%;
+    }
+    .feedback-card-header h3 {
+        font-size: 1.8rem;
+    }
+    .feedback-card-header p {
+        font-size: 1em;
+    }
+}
+
 @media screen and (max-width: 850px) {
     .feedback-container {
         flex-direction: column;
     }
     .feedback-cards {
+        width: 100%;
         display: grid;
+        justify-items: center;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     }
     .card img {
         width: 25%;
