@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             block: "end",
         });
     };
+
     const showMemberText = (index) => {
         const {
             texto: memberText,
@@ -79,7 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
         teamTextSection.innerHTML = "";
         teamTextSection.appendChild(fullNameDiv);
         teamTextSection.appendChild(messageDiv);
-        scrollToText();
     };
 
     const onClickMember = (index) => {
@@ -96,20 +96,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const onClickArrow = (side) => {
         const membros = document.getElementsByClassName("team-member");
-
+        let novoMembroAtivo;
         if (side === "left") {
-            let novoMembroAtivo = membroAtivo - 1;
+            novoMembroAtivo = membroAtivo - 1;
             if (novoMembroAtivo < 0) novoMembroAtivo = membros.length - 1;
-            deactivateMember(membroAtivo);
-            activateMember(novoMembroAtivo);
-            membroAtivo = novoMembroAtivo;
         } else if (side === "right") {
-            let novoMembroAtivo = membroAtivo + 1;
+            novoMembroAtivo = membroAtivo + 1;
             if (novoMembroAtivo >= membros.length) novoMembroAtivo = 0;
-            deactivateMember(membroAtivo);
-            activateMember(novoMembroAtivo);
-            membroAtivo = novoMembroAtivo;
         }
+
+        deactivateMember(membroAtivo);
+        activateMember(novoMembroAtivo);
+        membroAtivo = novoMembroAtivo;
     };
 
     const deactivateMember = (index) => {
