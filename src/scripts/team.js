@@ -4,42 +4,56 @@ const membros = [
         sobrenome: "Ricken",
         imagem: "./assets/imgs/team/tui_2.jpeg",
         texto: "Lorem",
+        altText:
+            "Arthur montado em um boi branco em um gramado, usando chapéu de palha, camiseta cinza e calça jeans, com árvores ao fundo.",
     },
     {
         nome: "Eduardo",
         sobrenome: "Garcia",
         imagem: "./assets/imgs/team/eduardo.jpeg",
-        texto: "Lorem Ipsum ",
+        texto: "Lorem Ipsum",
+        altText:
+            "Eduardo montado em um cavalo marrom em uma área de terra batida, usando camiseta preta e calça jeans.",
     },
     {
         nome: "Vitor",
         sobrenome: "Garcia",
         imagem: "./assets/imgs/team/vitor.png",
-        texto: "Olá! Me chamo Vitor, no ensino médio me formei em Tecnologia da Informação, onde tive o primeiro contato nas áreas de desenvolvimento de jogos, robótica e desenvolvimento de sistemas. Meu TCC foi um sistema de gerenciamento de pedidos e funcionários para restaurantes, chamado STEIN, feito em Python (Django). Agora, estou me formando em Engenharia de Software no IFPR. Tenho experiência com as linguagens Java, JavaScript, TypeScript, Python, SQL e Dart, já trabalhei com as tecnologias React, Angular, Nest e Flutter.  ",
+        texto: "Olá! Me chamo Vitor, no ensino médio me formei em Tecnologia da Informação, onde tive o primeiro contato nas áreas de desenvolvimento de jogos, robótica e desenvolvimento de sistemas. Meu TCC foi um sistema de gerenciamento de pedidos e funcionários para restaurantes, chamado STEIN, feito em Python (Django). Agora, estou me formando em Engenharia de Software no IFPR. Tenho experiência com as linguagens Java, JavaScript, TypeScript, Python, SQL e Dart, já trabalhei com as tecnologias React, Angular, Nest e Flutter.",
+        altText:
+            "Vitor sorrindo, de barba feita e camisa social preta, posando ao lado de uma parede de plantas verdes.",
     },
     {
         nome: "Rafael",
         sobrenome: "Leonardo",
         imagem: "./assets/imgs/team/rafael.png",
         texto: "Lorem Ipsum Dolor Sit",
+        altText:
+            "Rafael jovem, de óculos e expressão séria, usando roupa preta com detalhes brancos, em fundo escuro.",
     },
     {
         nome: "Lucas",
         sobrenome: "Ribeiro",
         imagem: "./assets/imgs/team/luscas.png",
         texto: "Lorem Ipsum Dolor Sit Amet",
+        altText:
+            "Lucas sorrindo, jovem, vestindo camisa branca, em ambiente interno com parede clara ao fundo.",
     },
     {
         nome: "Victor",
         sobrenome: "Martins",
         imagem: "./assets/imgs/team/victor.png",
         texto: "Prazer, meu nome é Victor Martins, tenho 27 anos, sou formado em Engenharia Civil pela UNIPAR e atualmente curso Engenharia de Software no IFPR. Com forte base em lógica, planejamento e resolução de problemas, aplico esses conhecimentos no desenvolvimento de sistemas e projetos de engenharia. Tenho experiência com Java, Python, C++, Flutter e HTML, e participo de projetos acadêmicos completos, da análise à implementação. Sou motivado por desafios, aprendizado contínuo e pela criação de soluções relevantes.",
+        altText:
+            "Victor sorridente com barba, usando camiseta preta, em frente a fundo colorido e escuro.",
     },
     {
         nome: "Danilo",
         sobrenome: "Avelar",
         imagem: "./assets/imgs/team/danilo.png",
         texto: "Sou estudante de Engenharia de Software no Instituto Federal do Paraná, com experiência em desenvolvimento de projetos utilizando Python, Java, JavaScript, Flutter, HTML e CSS. Além da formação acadêmica, atuo como autônomo no ramo de terraplanagem, o que reforça meu perfil proativo, responsável e focado em resultados. Busco aplicar minhas habilidades em tecnologia para desenvolver soluções práticas e eficientes, sempre com dedicação ao aprendizado contínuo.",
+        altText:
+            "Danilo sorridente usando camisa xadrez azul e chapéu de cowboy, em ambiente externo.",
     },
 ];
 
@@ -141,6 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const memberImg = document.createElement("img");
         memberImg.src = member.imagem;
+        memberImg.alt = member.altText;
 
         const memberName = document.createElement("div");
         memberName.classList.add("name");
