@@ -86,10 +86,13 @@
     text-decoration: underline;
 }
 
-button:focus,
-input:focus, textarea:focus {
-    outline: 3px solid #00ffcc;
-    outline-offset: 2px;
+.contact-section {
+    button:focus,
+    input:focus,
+    textarea:focus {
+        outline: 3px solid #00ffcc;
+        outline-offset: 2px;
+    }
 }
 
 @media (max-width: 768px) {

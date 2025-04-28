@@ -1,25 +1,21 @@
-document.addEventListener('DOMContentLoaded', function() {
-    scrollToAnchor();
+document.addEventListener("DOMContentLoaded", function () {
+    scrollToElement("product-button", "product");
+    scrollToElement("contactButton", "contact");
+    scrollToElement("team-button", "team");
 });
 
 function init() {}
 
 window.addEventListener("load", init);
 
-function scrollToAnchor(){
-    const productButton = document.getElementById('product-button');
-    productButton.addEventListener('click', function() {
-        document.getElementById('product').scrollIntoView({
-            behavior: 'smooth',
-            alignToTop: true,
-            block: 'start',
-        });
-    });
-    const contactButton = document.getElementById('contactButton');
-    contactButton.addEventListener('click', function() {
-        document.getElementById('contact').scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
+function scrollToElement(buttonId, elementId) {
+    const button = document.getElementById(buttonId);
+    if (!button) throw Error("Botão não encontrado");
+
+    button.addEventListener("click", function () {
+        document.getElementById(elementId).scrollIntoView({
+            behavior: "smooth",
+            block: "center",
         });
     });
 }
