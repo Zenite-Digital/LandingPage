@@ -67,12 +67,12 @@
 .footer-links a:hover {
     color: #34db3c;
 }
-
-.contact-info p {
-    margin-bottom: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer {
+    .contact-info p {
+        margin-bottom: 0.7rem;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .contact-info i {
