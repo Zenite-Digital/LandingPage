@@ -18,4 +18,11 @@ function scrollToElement(buttonId, elementId) {
             block: "center",
         });
     });
+    const faqButton = document.getElementById('faqButton');
+    faqButton.addEventListener('click', function() {
+        document.getElementById('faq').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    });
 }

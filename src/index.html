@@ -6,11 +6,12 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<!-- Open Graph -->
-    <meta property="og:title" content="GadOn - Seu App de Controle de Gado">
-    <meta property="og:description" content="Gerencie sua propriedade com o GadOn, o app de gestão de pastagem mais eficiente.">
-    <meta property="og:image" content="./assets/icons/App icon.png">
-    <!-- <meta property="og:url" content="https://www.seusite.com"> Não tem url definida ainda-->
-    <meta property="og:type" content="website">
+	<meta property="og:title" content="GadOn - Seu App de Controle de Gado">
+	<meta property="og:description"
+		content="Gerencie sua propriedade com o GadOn, o app de gestão de pastagem mais eficiente.">
+	<meta property="og:image" content="./assets/icons/App icon.png">
+	<!-- <meta property="og:url" content="https://www.seusite.com"> Não tem url definida ainda-->
+	<meta property="og:type" content="website">
 
 	<link rel="stylesheet" href="./styles/index.css" />
 	<link rel="stylesheet" href="./styles/root-styles.css" />
@@ -23,12 +24,17 @@
 	<link rel="stylesheet" href="./styles/feedback-section.css">
 	<link rel="stylesheet" href="./styles/side-menu.css">
 	<link rel="stylesheet" href="./styles/contact.css">
+	<link rel="stylesheet" href="./styles/faq-section.css">
+	<link rel="stylesheet" href="./styles/footer.css">
+	<script src="./scripts/index.js"></script>
 	<link rel="stylesheet" href="./styles/team.css">
 	<script src="./scripts/side-menu.js"></script>
 	<script src="./scripts/theme-toggler.js"></script>
 	<script src="./scripts/grouped-button.js"></script>
 	<script src="./scripts/carrousel.js" defer></script>
 	<script src="./scripts/product-info.js"></script>
+	<script src="./scripts/side-menu.js"></script>
+	<script src="./scripts/faq.js"></script>
 	<script src="./scripts/team.js"></script>
 	<script src="./scripts/index.js"></script>
 	<title>Zênite Digital</title>
@@ -66,9 +72,15 @@
 			<button class="arrow left" onclick="prevSlide()">&#10094</button>
 			<button class="arrow right" onclick="nextSlide()">&#10095</button>
 
-			<img src="./assets/imgs/gado_tui.jpg" alt="Vista de vários bois agrupados em um cocho, com a estrutura de um trator ou carregadeira visível em primeiro plano." class="slide active">
-			<img src="./assets/imgs/gado(1).jpg" alt="Grande quantidade de bois brancos reunidos em uma área de alimentação no campo sob um céu azul com poucas nuvens." class="slide">
-			<img src="./assets/imgs/gado(2).jpg" alt="Bovinos brancos se alimentando em um cocho ao ar livre, com o sol baixo no horizonte e árvores ao fundo." class="slide">
+			<img src="./assets/imgs/gado_tui.jpg"
+				alt="Vista de vários bois agrupados em um cocho, com a estrutura de um trator ou carregadeira visível em primeiro plano."
+				class="slide active">
+			<img src="./assets/imgs/gado(1).jpg"
+				alt="Grande quantidade de bois brancos reunidos em uma área de alimentação no campo sob um céu azul com poucas nuvens."
+				class="slide">
+			<img src="./assets/imgs/gado(2).jpg"
+				alt="Bovinos brancos se alimentando em um cocho ao ar livre, com o sol baixo no horizonte e árvores ao fundo."
+				class="slide">
 
 			<div class="dots" style="text-align: center">
 				<span class="dot active" onclick="goToSlide(0)"></span>
@@ -187,7 +199,9 @@
 						</div>
 						<div class="feedback-card-content">
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus odio, illum ratione at nisi mollitia.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
+								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
+								odio, illum ratione at nisi mollitia.
 							</p>
 						</div>
 					</div>
@@ -202,7 +216,9 @@
 						</div>
 						<div class="feedback-card-content">
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus odio, illum ratione at nisi mollitia.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
+								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
+								odio, illum ratione at nisi mollitia.
 							</p>
 						</div>
 					</div>
@@ -217,7 +233,9 @@
 						</div>
 						<div class="feedback-card-content">
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus odio, illum ratione at nisi mollitia.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
+								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
+								odio, illum ratione at nisi mollitia.
 							</p>
 						</div>
 					</div>
@@ -232,7 +250,9 @@
 						</div>
 						<div class="feedback-card-content">
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus odio, illum ratione at nisi mollitia.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
+								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
+								odio, illum ratione at nisi mollitia.
 							</p>
 						</div>
 					</div>
@@ -297,8 +317,32 @@
 			</form>
 			<div class="contact-info">
 				<p>E-mail: <a href="mailto:aiai@email.com">aiai@email.com</a></p>
-				<p>WhatsApp: <a href="https://wa.me/[numeroWhatsapp]" target="_blank">[número de contato a definir]</a></p>
+				<p>WhatsApp: <a href="https://wa.me/[numeroWhatsapp]" target="_blank">[número de contato a definir]</a>
+				</p>
 			</div>
+		</div>
+
+		<div id="faq" class="faq-section">
+			<div class="faq-title">
+				<h2>FAQ</h2>
+				<p class="subititle">Perguntas frequentes.</p>
+			</div>
+<!-- 
+			<div class="faq-accordions">
+				<div class="accordions">
+					<div id="header-faq" class="accordion-header">
+						<h3 id="faq-title" class="accordion-title">
+
+						</h3>
+						<span class="accordion-icon">▲</span>
+					</div>
+					<div id="resposta-faq" class="accordion-content">
+						<p>
+
+						</p>
+					</div>
+				</div>
+			</div>			 -->
 		</div>
 	</main>
     <div id="side-menu-nav-container">
@@ -315,6 +359,59 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Veja mais</h3>
+                    <p>Os projetos da Zênite Digital estão em constante evolução, quer saber mais?</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Zenite-Digital" target="_blank" aria-label="GitHub">
+							<i class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+									<path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577v-2.234c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.774.418-1.305.762-1.605-2.665-.305-5.467-1.333-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.292-1.552 3.3-1.23 3.3-1.23.653 1.653.241 2.873.118 3.176.77.84 1.236 1.912 1.236 3.222 0 4.61-2.807 5.623-5.478 5.92.43.37.823 1.102.823 2.222v3.293c0 .32.192.694.8.577C20.565 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+								</svg>
+							</i></svg></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links úteis</h3>
+                    <ul class="footer-links">
+                        <li><a href="./not-found.html">Suporte</a></li>
+                        <li><a href="./politica.html">Política de Privacidade</a></li>
+                        <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a></li>
+                        <li><a href="https://ifpr.edu.br/paranavai/" target="_blank">IFPR - Paranavaí</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contatos</h3>
+                    <div class="contact-info">
+                        <p><i class="icon">📍</i> Av. José Felipe Tequinha, 1400 - Jardim das Nacoes, Paranavaí - PR</p>
+                        <p><i class="icon">📞</i> +55 (44) 99999-9999</p>
+                        <p><i class="icon">✉️</i> email@zenitedigital.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Novidades!</h3>
+                    <p>Receba novidades sobre nossos produtos.</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" id="email-input" placeholder="Seu melhor e-mail" required>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <div id="error-message" class="error-message">Por favor insira um e-mail válido.</div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Zênite Digital. Todos os direitos reservados.</p>
+                <p>Feito com ❤️ para você</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
