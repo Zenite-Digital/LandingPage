@@ -9,34 +9,35 @@
 	<meta property="og:title" content="GadOn - Seu App de Controle de Gado">
 	<meta property="og:description"
 		content="Gerencie sua propriedade com o GadOn, o app de gestão de pastagem mais eficiente.">
-	<meta property="og:image" content="./assets/icons/App icon.png">
+	<meta property="og:image" content="./src/assets/icons/App icon.png">
 	<!-- <meta property="og:url" content="https://www.seusite.com"> Não tem url definida ainda-->
 	<meta property="og:type" content="website">
 
-	<link rel="stylesheet" href="./styles/index.css" />
-	<link rel="stylesheet" href="./styles/root-styles.css" />
-	<link rel="stylesheet" href="./styles/header.css" />
-	<link rel="stylesheet" href="./styles/carrousel.css" />
-	<link rel="stylesheet" href="./styles/product-info.css" />
-	<link rel="stylesheet" href="./styles/functions-section.css" />
+	<link rel="stylesheet" href="./src/styles/index.css" />
+	<link rel="stylesheet" href="./src/styles/root-styles.css" />
+	<link rel="stylesheet" href="./src/styles/header.css" />
+	<link rel="stylesheet" href="./src/styles/carrousel.css" />
+	<link rel="stylesheet" href="./src/styles/product-info.css" />
+	<link rel="stylesheet" href="./src/styles/functions-section.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
-	<link rel="icon" type="image/x-icon" href="./assets/icons/icon.png" />
-	<link rel="stylesheet" href="./styles/feedback-section.css">
-	<link rel="stylesheet" href="./styles/side-menu.css">
-	<link rel="stylesheet" href="./styles/contact.css">
-	<link rel="stylesheet" href="./styles/faq-section.css">
-	<link rel="stylesheet" href="./styles/footer.css">
-	<script src="./scripts/index.js"></script>
-	<link rel="stylesheet" href="./styles/team.css">
-	<script src="./scripts/side-menu.js"></script>
-	<script src="./scripts/theme-toggler.js"></script>
-	<script src="./scripts/grouped-button.js"></script>
-	<script src="./scripts/carrousel.js" defer></script>
-	<script src="./scripts/product-info.js"></script>
-	<script src="./scripts/side-menu.js"></script>
-	<script src="./scripts/faq.js"></script>
-	<script src="./scripts/team.js"></script>
-	<script src="./scripts/index.js"></script>
+	<link rel="icon" type="image/x-icon" href="./src/assets/icons/icon.png" />
+	<link rel="stylesheet" href="./src/styles/feedback-section.css">
+	<link rel="stylesheet" href="./src/styles/side-menu.css">
+	<link rel="stylesheet" href="./src/styles/contact.css">
+	<link rel="stylesheet" href="./src/styles/faq-section.css">
+	<link rel="stylesheet" href="./src/styles/footer.css">
+	<link rel="stylesheet" href="./src/styles/plans-benefits.css">
+	<script src="./src/scripts/index.js"></script>
+	<link rel="stylesheet" href="./src/styles/team.css">
+	<script src="./src/scripts/side-menu.js"></script>
+	<script src="./src/scripts/theme-toggler.js"></script>
+	<script src="./src/scripts/grouped-button.js"></script>
+	<script src="./src/scripts/carrousel.js" defer></script>
+	<script src="./src/scripts/product-info.js"></script>
+	<script src="./src/scripts/side-menu.js"></script>
+	<script src="./src/scripts/faq.js"></script>
+	<script src="./src/scripts/team.js"></script>
+	<script src="./src/scripts/index.js"></script>
 	<title>Zênite Digital</title>
 </head>
 
@@ -72,13 +73,13 @@
 			<button class="arrow left" onclick="prevSlide()">&#10094</button>
 			<button class="arrow right" onclick="nextSlide()">&#10095</button>
 
-			<img src="./assets/imgs/gado_tui.jpg"
+			<img src="./src/assets/imgs/gado_tui.jpg"
 				alt="Vista de vários bois agrupados em um cocho, com a estrutura de um trator ou carregadeira visível em primeiro plano."
 				class="slide active">
-			<img src="./assets/imgs/gado(1).jpg"
+			<img src="./src/assets/imgs/gado(1).jpg"
 				alt="Grande quantidade de bois brancos reunidos em uma área de alimentação no campo sob um céu azul com poucas nuvens."
 				class="slide">
-			<img src="./assets/imgs/gado(2).jpg"
+			<img src="./src/assets/imgs/gado(2).jpg"
 				alt="Bovinos brancos se alimentando em um cocho ao ar livre, com o sol baixo no horizonte e árvores ao fundo."
 				class="slide">
 
@@ -93,7 +94,7 @@
 		<div id="product" class="about-product-container">
 			<div class="about-product">
 				<div class="about-product-img">
-					<img src="./assets/imgs/App icon.png" alt="Icone GadOn">
+					<img src="./src/assets/imgs/App icon.png" alt="Icone GadOn">
 				</div>
 				<div class="product-content">
 					<h1>GadOn</h1>
@@ -259,6 +260,44 @@
 				</div>
 			</div>
 		</div>
+        <div class="plans-container">
+            <h2>Nossos Planos</h2>
+		<div class="plans-section">
+            <div class="plan-card">
+				<h3>Plano Platinum</h3>
+				<p class="price">R$55<span>/mês</span></p>
+				<p class="description">Perfeito para grandes propriedades</p>
+				<ul>
+					<li>Acesso completo a todas as funcionalidades</li>
+					<li>Suporte 24/7</li>
+					<li>Relatórios personalizados</li>
+				</ul>
+				<button class="subscribe-btn">Assinar Agora</button>
+			</div>
+			<div class="plan-card">
+				<h3>Plano Platinum</h3>
+				<p class="price">R$55<span>/mês</span></p>
+				<p class="description">Perfeito para grandes propriedades</p>
+				<ul>
+					<li>Acesso completo a todas as funcionalidades</li>
+					<li>Suporte 24/7</li>
+					<li>Relatórios personalizados</li>
+				</ul>
+				<button class="subscribe-btn">Assinar Agora</button>
+			</div>
+			<div class="plan-card">
+				<h3>Plano Platinum</h3>
+				<p class="price">R$55<span>/mês</span></p>
+				<p class="description">Perfeito para grandes propriedades</p>
+				<ul>
+					<li>Acesso completo a todas as funcionalidades</li>
+					<li>Suporte 24/7</li>
+					<li>Relatórios personalizados</li>
+				</ul>
+				<button class="subscribe-btn">Assinar Agora</button>
+			</div>
+        </div>
+        </div>
 
         <div class="team-section" id="team">
             <div class="header">
@@ -351,7 +390,7 @@
         <div class="side-navigation-menu" id="side-menu">
             <a href="javascript:void(0)" class="side-menu-close-btn" onclick="closeNav()">&times;</a>
             <div class="side-menu-content">
-                <a onclick="closeNav()" href="#" class="side-menu-logo"><img src="./assets/icons/icon.png" alt="Logo GadOn"></a>
+                <a onclick="closeNav()" href="#" class="side-menu-logo"><img src="./src/assets/icons/icon.png" alt="Logo GadOn"></a>
                 <a onclick="closeNav()" href="#product">Nossos Produtos</a>
                 <a onclick="closeNav()" href="#team">Quem Somos</a>
                 <a onclick="closeNav()" href="#contact">Contato</a>
@@ -379,8 +418,8 @@
                 <div class="footer-column">
                     <h3>Links úteis</h3>
                     <ul class="footer-links">
-                        <li><a href="./not-found.html">Suporte</a></li>
-                        <li><a href="./politica.html">Política de Privacidade</a></li>
+                        <li><a href="./src/not-found.html">Suporte</a></li>
+                        <li><a href="./src/politica.html">Política de Privacidade</a></li>
                         <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a></li>
                         <li><a href="https://ifpr.edu.br/paranavai/" target="_blank">IFPR - Paranavaí</a></li>
                     </ul>
