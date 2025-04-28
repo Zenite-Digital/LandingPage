@@ -1,0 +1,456 @@
+<!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Open Graph -->
+	<meta property="og:title" content="GadOn - Seu App de Controle de Gado">
+	<meta property="og:description"
+		content="Gerencie sua propriedade com o GadOn, o app de gestão de pastagem mais eficiente.">
+	<meta property="og:image" content="./src/assets/icons/App icon.png">
+	<!-- <meta property="og:url" content="https://www.seusite.com"> Não tem url definida ainda-->
+	<meta property="og:type" content="website">
+
+	<link rel="stylesheet" href="./src/styles/index.css" />
+	<link rel="stylesheet" href="./src/styles/root-styles.css" />
+	<link rel="stylesheet" href="./src/styles/header.css" />
+	<link rel="stylesheet" href="./src/styles/carrousel.css" />
+	<link rel="stylesheet" href="./src/styles/product-info.css" />
+	<link rel="stylesheet" href="./src/styles/functions-section.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+	<link rel="icon" type="image/x-icon" href="./src/assets/icons/icon.png" />
+	<link rel="stylesheet" href="./src/styles/feedback-section.css">
+	<link rel="stylesheet" href="./src/styles/side-menu.css">
+	<link rel="stylesheet" href="./src/styles/contact.css">
+	<link rel="stylesheet" href="./src/styles/faq-section.css">
+	<link rel="stylesheet" href="./src/styles/footer.css">
+	<link rel="stylesheet" href="./src/styles/plans-benefits.css">
+	<script src="./src/scripts/index.js"></script>
+	<link rel="stylesheet" href="./src/styles/team.css">
+	<script src="./src/scripts/side-menu.js"></script>
+	<script src="./src/scripts/theme-toggler.js"></script>
+	<script src="./src/scripts/grouped-button.js"></script>
+	<script src="./src/scripts/carrousel.js" defer></script>
+	<script src="./src/scripts/product-info.js"></script>
+	<script src="./src/scripts/side-menu.js"></script>
+	<script src="./src/scripts/faq.js"></script>
+	<script src="./src/scripts/team.js"></script>
+	<script src="./src/scripts/index.js"></script>
+	<title>Zênite Digital</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div id="header-left-buttons">
+				<div class="side-menu-container">
+					<button id="toggle-side-menu-btn" title="Menu Lateral" class="menu-btn button icon-btn">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="var(--main-svg-color)" />
+						</svg>
+					</button>
+				</div>
+                <a href="#" id="company-header-logo">Zênite Digital</a>
+			</div>
+
+			<div id="header-right-buttons">
+				<div class="grouped-buttons">
+					<button id="product-button" title="" class="grouped-btn-header">Nossos
+						Produtos</button>
+                        <button title="" class="grouped-btn-header" id="team-button">Quem Somos</button>
+                        <button title="" class="grouped-btn-header" id="contactButton">Contato</button>
+                        <button title="" class="grouped-btn-header" id="faqButton">FAQ</button>
+				</div>
+				<button id="theme-toggler-btn" title="Menu Lateral" class="menu-btn button icon-btn"></button>
+			</div>
+		</nav>
+	</header>
+
+	<main style="margin: 0; padding: 0; box-sizing: border-box;">
+		<div class="carrousel">
+			<button class="arrow left" onclick="prevSlide()">&#10094</button>
+			<button class="arrow right" onclick="nextSlide()">&#10095</button>
+
+			<img src="./src/assets/imgs/gado_tui.jpg"
+				alt="Vista de vários bois agrupados em um cocho, com a estrutura de um trator ou carregadeira visível em primeiro plano."
+				class="slide active">
+			<img src="./src/assets/imgs/gado(1).jpg"
+				alt="Grande quantidade de bois brancos reunidos em uma área de alimentação no campo sob um céu azul com poucas nuvens."
+				class="slide">
+			<img src="./src/assets/imgs/gado(2).jpg"
+				alt="Bovinos brancos se alimentando em um cocho ao ar livre, com o sol baixo no horizonte e árvores ao fundo."
+				class="slide">
+
+			<div class="dots" style="text-align: center">
+				<span class="dot active" onclick="goToSlide(0)"></span>
+				<span class="dot" onclick="goToSlide(1)"></span>
+				<span class="dot" onclick="goToSlide(2)"></span>
+			</div>
+
+		</div>
+		<div class="divider"></div>
+		<div id="product" class="about-product-container">
+			<div class="about-product">
+				<div class="about-product-img">
+					<img src="./src/assets/imgs/App icon.png" alt="Icone GadOn">
+				</div>
+				<div class="product-content">
+					<h1>GadOn</h1>
+					<p class="subititle">Seu app de controle de Gado</p>
+					<button class="download-btn">Download</button>
+					<div class="product-accordion">
+						<div class="accordion-header">
+							<h3>Sobre o Produto</h3>
+							<span class="accordion-icon">▲</span>
+						</div>
+						<div class="accordion-content">
+							<p>GadOn é um aplicativo de gestão de pastagem que facilita o gerenciamento da propriedade,
+								incluindo controle de lotes, rodízios de pastagens, reprodução e muito mais, tudo isso
+								em uma plataforma intuitiva.
+							</p>
+							<p>
+
+								Desenvolvido para pequenos e médios produtores, o GadOn transforma dados em insights
+								estratégicos, tornando a gestão da sua propriedade mais eficiente e acessível.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="functions-title">
+			<h2>Funcionalidades</h2>
+			<p class="subititle">Descubra como o GadOn pode ajudar você a gerenciar seu rebanho de forma eficiente e
+				prática.</p>
+		</div>
+		<br>
+		<div class="functions">
+			<div class="functions_row">
+				<div class="functions_column">
+					<div class="card">
+						<div class="card-header">
+							<svg class="card-icon" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 512 512">
+								<path
+									d="M228.3 469.1L47.6 300.4c-4.2-3.9-8.2-8.1-11.9-12.4l87 0c22.6 0 43-13.6 51.7-34.5l10.5-25.2 49.3 109.5c3.8 8.5 12.1 14 21.4 14.1s17.8-5 22-13.3L320 253.7l1.7 3.4c9.5 19 28.9 31 50.1 31l104.5 0c-3.7 4.3-7.7 8.5-11.9 12.4L283.7 469.1c-7.5 7-17.4 10.9-27.7 10.9s-20.2-3.9-27.7-10.9zM503.7 240l-132 0c-3 0-5.8-1.7-7.2-4.4l-23.2-46.3c-4.1-8.1-12.4-13.3-21.5-13.3s-17.4 5.1-21.5 13.3l-41.4 82.8L205.9 158.2c-3.9-8.7-12.7-14.3-22.2-14.1s-18.1 5.9-21.8 14.8l-31.8 76.3c-1.2 3-4.2 4.9-7.4 4.9L16 240c-2.6 0-5 .4-7.3 1.1C3 225.2 0 208.2 0 190.9l0-5.8c0-69.9 50.5-129.5 119.4-141C165 36.5 211.4 51.4 244 84l12 12 12-12c32.6-32.6 79-47.5 124.6-39.9C461.5 55.6 512 115.2 512 185.1l0 5.8c0 16.9-2.8 33.5-8.3 49.1z" />
+							</svg>
+							<h3>Controle de Saúde</h3>
+						</div>
+						<div class="card-content">
+							<p>Registre e acompanhe a saúde do seu rebanho com facilidade.</p>
+						</div>
+					</div>
+				</div>
+				<div class="functions_column">
+					<div class="card">
+						<div class="card-header">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+								class="card-icon">
+								<path
+									d="M96 224l0 32 0 160c0 17.7 14.3 32 32 32l32 0c17.7 0 32-14.3 32-32l0-88.2c9.9 6.6 20.6 12 32 16.1l0 24.2c0 8.8 7.2 16 16 16s16-7.2 16-16l0-16.9c5.3 .6 10.6 .9 16 .9s10.7-.3 16-.9l0 16.9c0 8.8 7.2 16 16 16s16-7.2 16-16l0-24.2c11.4-4 22.1-9.4 32-16.1l0 88.2c0 17.7 14.3 32 32 32l32 0c17.7 0 32-14.3 32-32l0-160 32 32 0 49.5c0 9.5 2.8 18.7 8.1 26.6L530 427c8.8 13.1 23.5 21 39.3 21c22.5 0 41.9-15.9 46.3-38l20.3-101.6c2.6-13-.3-26.5-8-37.3l-3.9-5.5 0-81.6c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 14.4-52.9-74.1C496 86.5 452.4 64 405.9 64L272 64l-16 0-64 0-48 0C77.7 64 24 117.7 24 184l0 54C9.4 249.8 0 267.8 0 288l0 17.6c0 8 6.4 14.4 14.4 14.4C46.2 320 72 294.2 72 262.4l0-6.4 0-32 0-40c0-24.3 12.1-45.8 30.5-58.9C98.3 135.9 96 147.7 96 160l0 64zM560 336a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zM166.6 166.6c-4.2-4.2-6.6-10-6.6-16c0-12.5 10.1-22.6 22.6-22.6l178.7 0c12.5 0 22.6 10.1 22.6 22.6c0 6-2.4 11.8-6.6 16l-23.4 23.4C332.2 211.8 302.7 224 272 224s-60.2-12.2-81.9-33.9l-23.4-23.4z" />
+							</svg>
+							<h3>Controle de Pastoreio</h3>
+						</div>
+						<div class="card-content">
+							<p>Gerencie o pastoreio do seu rebanho de forma eficiente, planejando a rotação de pastos e
+								garantindo a saúde do solo e dos animais.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="functions_column">
+					<div class="card">
+						<div class="card-header">
+							<svg xmlns="http://www.w3.org/2000/svg" class="card-icon"
+								viewBox="0 0 512 512">
+
+								<path
+									d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+							</svg>
+							<h3>Funcionalidade 3</h3>
+						</div>
+						<div class="card-content">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tempore dolore veritatis
+								id ea aspernatur sed nulla deleniti voluptas, fugiat repudiandae perferendis debitis
+								neque atque magnam sint officiis quo corrupti!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="functions-title">
+			<h2>Avaliações</h2>
+			<p class="subititle">Veja o que nossos clientes estão achando do GadOn.</p>
+		</div>
+
+		<div class="feedback-section">
+			<div class="feedback-container">
+				<div class="feedback-cards">
+					<div class="card">
+						<div class="feedback-card-header">
+							<img src="https://thispersondoesnotexist.com/" alt="person">
+							<div class="feedback-user-info">
+								<h3>Placeholder</h3>
+								<p>Placeholder</p>
+							</div>
+						</div>
+						<div class="feedback-card-content">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
+								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
+								odio, illum ratione at nisi mollitia.
+							</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="feedback-card-header">
+							<img src="https://thispersondoesnotexist.com/" alt="person">
+							<div class="feedback-user-info">
+								<h3>Placeholder</h3>
+								<p>Placeholder</p>
+							</div>
+						</div>
+						<div class="feedback-card-content">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
+								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
+								odio, illum ratione at nisi mollitia.
+							</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="feedback-card-header">
+							<img src="https://thispersondoesnotexist.com/" alt="person">
+							<div class="feedback-user-info">
+								<h3>Placeholder</h3>
+								<p>Placeholder</p>
+							</div>
+						</div>
+						<div class="feedback-card-content">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
+								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
+								odio, illum ratione at nisi mollitia.
+							</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="feedback-card-header">
+							<img src="https://thispersondoesnotexist.com/" alt="person">
+							<div class="feedback-user-info">
+								<h3>Placeholder</h3>
+								<p>Placeholder</p>
+							</div>
+						</div>
+						<div class="feedback-card-content">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
+								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
+								odio, illum ratione at nisi mollitia.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="plans-container">
+            <h2>Nossos Planos</h2>
+		<div class="plans-section">
+            <div class="plan-card">
+				<h3>Plano Platinum</h3>
+				<p class="price">R$55<span>/mês</span></p>
+				<p class="description">Perfeito para grandes propriedades</p>
+				<ul>
+					<li>Acesso completo a todas as funcionalidades</li>
+					<li>Suporte 24/7</li>
+					<li>Relatórios personalizados</li>
+				</ul>
+				<button class="subscribe-btn">Assinar Agora</button>
+			</div>
+			<div class="plan-card">
+				<h3>Plano Platinum</h3>
+				<p class="price">R$55<span>/mês</span></p>
+				<p class="description">Perfeito para grandes propriedades</p>
+				<ul>
+					<li>Acesso completo a todas as funcionalidades</li>
+					<li>Suporte 24/7</li>
+					<li>Relatórios personalizados</li>
+				</ul>
+				<button class="subscribe-btn">Assinar Agora</button>
+			</div>
+			<div class="plan-card">
+				<h3>Plano Platinum</h3>
+				<p class="price">R$55<span>/mês</span></p>
+				<p class="description">Perfeito para grandes propriedades</p>
+				<ul>
+					<li>Acesso completo a todas as funcionalidades</li>
+					<li>Suporte 24/7</li>
+					<li>Relatórios personalizados</li>
+				</ul>
+				<button class="subscribe-btn">Assinar Agora</button>
+			</div>
+        </div>
+        </div>
+
+        <div class="team-section" id="team">
+            <div class="header">
+                <h2 class="title">Quem Somos</h2>
+            </div>
+            <div class="team-members">
+                <button class="arrow left" id="team-left-arrow" alt="Membro anterior">&#10094</button>
+			<button class="arrow right" id="team-right-arrow" alt="Próximo membro">&#10095</button>
+            </div>
+            <div class="team-text">
+            </div>
+        </div>
+
+		<div id="contact" class="contact-section">
+			<h2>Contato</h2>
+			<p class="subititle">Entre em contato conosco para mais informações.</p>
+			<form action="[precisa definir o email de contato]" method="post" enctype="text/plain" class="contact-form">
+				<label for="name">Nome:</label>
+				<input 
+				type="text" 
+				id="name" 
+				name="name" 
+				placeholder="Seu nome" 
+				required 
+				aria-label="Campo para digitar seu nome"
+				oninvalid="this.setCustomValidity('Por favor, preencha este campo.')"
+				oninput="this.setCustomValidity('')"
+				/>
+		
+				<label for="email">E-mail:</label>
+				<input 
+				type="email" 
+				id="email" 
+				name="email" 
+				placeholder="Seu e-mail" 
+				required 
+				aria-label="Campo para digitar seu e-mail"
+				oninvalid="this.setCustomValidity('Por favor, informe um e-mail válido')"
+				oninput="this.setCustomValidity('')"
+				/>
+		
+				<label for="message">Mensagem:</label>
+				<textarea 
+				id="message" 
+				name="message" 
+				placeholder="Sua mensagem" 
+				rows="5" 
+				required 
+				maxlength="200" 
+				aria-label="Campo para digitar a sua mensagem"
+				oninvalid="this.setCustomValidity('Por favor, preencha este campo')"
+				oninput="this.setCustomValidity('')"
+				></textarea>
+		
+				<button type="submit" class="button" accesskey="s">Enviar (Alt+Shift+S)</button>
+			</form>
+			<div class="contact-info">
+				<p>E-mail: <a href="mailto:aiai@email.com">aiai@email.com</a></p>
+				<p>WhatsApp: <a href="https://wa.me/[numeroWhatsapp]" target="_blank">[número de contato a definir]</a>
+				</p>
+			</div>
+		</div>
+
+		<div id="faq" class="faq-section">
+			<div class="faq-title">
+				<h2>FAQ</h2>
+				<p class="subititle">Perguntas frequentes.</p>
+			</div>
+<!-- 
+			<div class="faq-accordions">
+				<div class="accordions">
+					<div id="header-faq" class="accordion-header">
+						<h3 id="faq-title" class="accordion-title">
+
+						</h3>
+						<span class="accordion-icon">▲</span>
+					</div>
+					<div id="resposta-faq" class="accordion-content">
+						<p>
+
+						</p>
+					</div>
+				</div>
+			</div>			 -->
+		</div>
+	</main>
+    <div id="side-menu-nav-container">
+        <div id="navigation-backdrop"></div>
+
+        <div class="side-navigation-menu" id="side-menu">
+            <a href="javascript:void(0)" class="side-menu-close-btn" onclick="closeNav()">&times;</a>
+            <div class="side-menu-content">
+                <a onclick="closeNav()" href="#" class="side-menu-logo"><img src="./src/assets/icons/icon.png" alt="Logo GadOn"></a>
+                <a onclick="closeNav()" href="#product">Nossos Produtos</a>
+                <a onclick="closeNav()" href="#team">Quem Somos</a>
+                <a onclick="closeNav()" href="#contact">Contato</a>
+                <a onclick="closeNav()" href="#faq">FAQ</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Veja mais</h3>
+                    <p>Os projetos da Zênite Digital estão em constante evolução, quer saber mais?</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Zenite-Digital" target="_blank" aria-label="GitHub">
+							<i class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+									<path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577v-2.234c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.774.418-1.305.762-1.605-2.665-.305-5.467-1.333-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.292-1.552 3.3-1.23 3.3-1.23.653 1.653.241 2.873.118 3.176.77.84 1.236 1.912 1.236 3.222 0 4.61-2.807 5.623-5.478 5.92.43.37.823 1.102.823 2.222v3.293c0 .32.192.694.8.577C20.565 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+								</svg>
+							</i></svg></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links úteis</h3>
+                    <ul class="footer-links">
+                        <li><a href="./src/not-found.html">Suporte</a></li>
+                        <li><a href="./src/politica.html">Política de Privacidade</a></li>
+                        <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank">LGPD</a></li>
+                        <li><a href="https://ifpr.edu.br/paranavai/" target="_blank">IFPR - Paranavaí</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contatos</h3>
+                    <div class="contact-info">
+                        <p><i class="icon">📍</i> Av. José Felipe Tequinha, 1400 - Jardim das Nacoes, Paranavaí - PR</p>
+                        <p><i class="icon">📞</i> +55 (44) 99999-9999</p>
+                        <p><i class="icon">✉️</i> email@zenitedigital.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Novidades!</h3>
+                    <p>Receba novidades sobre nossos produtos.</p>
+                    <form id="newsletter-form" class="newsletter-form">
+                        <input type="email" id="email-input" placeholder="Seu melhor e-mail" required>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <div id="error-message" class="error-message">Por favor insira um e-mail válido.</div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Zênite Digital. Todos os direitos reservados.</p>
+                <p>Feito com ❤️ para você</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

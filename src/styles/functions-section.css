@@ -1,0 +1,96 @@
+.functions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.functions-title h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -10px;
+}
+
+.dark-theme .functions-title h2 {
+    color: white;
+}
+
+.functions-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    padding-left: 6%;
+}
+
+.functions_column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.functions_row {
+    margin: 0 -5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.functions_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    background-color: #f1f1f1;
+    padding: 16px;
+    text-align: center;
+    justify-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    min-width: 250px;
+    margin: 10px;
+    min-height: 150px;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.08);
+    transition: all 0.3s ease;
+}
+
+.dark-theme .card {
+    background-color: var(--stone-700);
+    color: white;
+}
+.dark-theme .card:hover {
+    background-color: var(--stone-600);
+}
+
+.dark-theme .card-icon {
+    filter: invert(1);
+}
+
+@media screen and (max-width: 850px) {
+    .functions_column {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .functions_row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}

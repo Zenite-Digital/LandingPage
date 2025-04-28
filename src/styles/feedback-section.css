@@ -1,0 +1,121 @@
+.feedback-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 25px;
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 20%;
+    border-radius: 100%;
+    border: 5px;
+    border-color: var(--stone-900);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.feedback-card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+
+    & h3 {
+        margin-left: 10px;
+        font-size: 1.5rem;
+        color: var(--stone-900);
+        font-weight: 600;
+        margin: 0;
+    }
+
+    & p {
+        margin-left: 10px;
+        font-size: 1rem;
+        color: var(--stone-500);
+        font-weight: 400;
+        margin: 0;
+    }
+}
+
+.feedback-user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+}
+
+.feedback-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    text-align: justify;
+}
+
+.dark-theme .feedback-card-header h3 {
+    color: white;
+}
+.dark-theme .feedback-card-header p {
+    color: var(--light);
+}
+
+@media screen and (max-width: 1080px) {
+    .feedback-container {
+        justify-content: start;
+        width: 100%;
+        overflow: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .card img {
+        width: 25%;
+    }
+    .feedback-card-header h3 {
+        font-size: 1.8rem;
+    }
+    .feedback-card-header p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .feedback-container {
+        flex-direction: column;
+    }
+    .feedback-cards {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+    .card img {
+        width: 25%;
+    }
+    .feedback-card-header h3 {
+        font-size: 1.8rem;
+    }
+    .feedback-card-header p {
+        font-size: 1em;
+    }
+}

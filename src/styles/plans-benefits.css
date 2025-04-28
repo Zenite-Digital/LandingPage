@@ -1,0 +1,143 @@
+@import url("./root-styles.css");
+.dark-theme {
+    .plans-section {
+        background-color: var(--stone-700);
+    }
+
+    .plan-card {
+        border-color: var(--stone-500);
+    }
+
+    .plan-card h3 {
+        color: white;
+    }
+
+    .plan-card .price span,
+    .plan-card .description,
+    .plan-card ul li {
+        color: var(--stone-300);
+    }
+
+    .plans-container h2 {
+        color: white;
+    }
+}
+
+.plans-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    justify-items: center;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--stone-100);
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+    min-width: 340px;
+
+    border-radius: 8px;
+}
+
+.plans-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding-bottom: 40px;
+}
+
+.plan-card {
+    background-color: var(--btn-background-active);
+    border: 1px solid var(--stone-300);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.plan-card .price {
+    font-size: 2rem;
+    color: var(--brand);
+    margin: 10px 0;
+}
+
+.plan-card .price span {
+    font-size: 1rem;
+    color: var(--stone-500);
+}
+
+.plan-card .description {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--stone-600);
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.plan-card ul li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: var(--stone-700);
+}
+
+.plan-card .subscribe-btn {
+    background-color: var(--brand);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+}
+
+.plan-card .subscribe-btn:hover {
+    background-color: #00501f;
+}
+
+.plan-card.top-seller {
+    border: 2px solid var(--brand);
+    position: relative;
+}
+
+.plan-card.top-seller::before {
+    content: "Mais Popular";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--brand);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}

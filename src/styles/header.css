@@ -1,0 +1,101 @@
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+
+    padding: 20px 80px 20px 80px;
+
+    justify-content: space-between;
+
+    background: var(--header-background);
+}
+
+#header-left-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#header-right-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.side-menu-container {
+    display: none;
+}
+
+.grouped-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.grouped-buttons button {
+    all: unset;
+    -webkit-user-select: none;
+    user-select: none;
+    font-weight: 500;
+    font-size: medium;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 20px;
+    padding: 4px 15px;
+    min-width: 50px;
+
+    border: 1px solid var(--brand-border);
+
+    cursor: pointer;
+    color: var(--stone-950);
+
+    &:first-child {
+        border-radius: 1000px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+        border-radius: 1000px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    &:hover {
+        background-color: #fff;
+    }
+}
+
+.dark-theme .grouped-buttons button {
+    color: white;
+}
+
+.dark-theme .grouped-buttons button:hover {
+    background-color: var(--stone-700);
+}
+
+.grouped-buttons button.active,
+.grouped-buttons button:active {
+    background-color: var(--brand);
+    color: var(--brand-light);
+}
+
+@media (max-width: 850px) {
+    .grouped-buttons {
+        display: none;
+    }
+    header nav {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .side-menu-container {
+        display: flex;
+    }
+}
