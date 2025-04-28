@@ -37,7 +37,7 @@
 }
 
 .footer-column h3::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
@@ -60,7 +60,7 @@
     transition: color 0.3s ease;
 }
 
-.dark-theme .footer-links a{
+.dark-theme .footer-links a {
     color: var(--stone-100);
 }
 
@@ -72,6 +72,7 @@
     margin-bottom: 0.7rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .contact-info i {
@@ -171,7 +172,6 @@
     transform: translateY(-3px);
 }
 
-
 .error-message {
     color: #e74c3c;
     font-size: 0.8rem;
@@ -185,7 +185,7 @@
         gap: 2rem;
         padding: 25px;
     }
-    
+
     .footer-column {
         width: 100%;
     }
