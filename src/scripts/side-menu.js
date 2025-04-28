@@ -22,7 +22,12 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("side-menu-nav-container").style.display = "none";
+    setTimeout(
+        () =>
+            (document.getElementById("side-menu-nav-container").style.display =
+                "none"),
+        500
+    );
     document.getElementById("side-menu").style.width = "0";
     document.getElementById("side-menu").style.transition = "width 0.5s";
 }
