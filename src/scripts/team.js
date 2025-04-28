@@ -44,9 +44,14 @@ const membros = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    const teamMembersSection = document.getElementsByClassName("team-members");
+    let membroAtivo = 0;
+    const teamMembersSection = document
+        .getElementsByClassName("team-members")
+        ?.item(0);
     const teamTextSections = document.getElementsByClassName("team-text");
     const teamTextSection = teamTextSections.item(0);
+    const teamLeftArrowBtn = document.getElementById("team-left-arrow");
+    const teamRightArrowBtn = document.getElementById("team-right-arrow");
 
     const scrollToText = () => {
         teamTextSection.scrollIntoView({
@@ -74,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         teamTextSection.innerHTML = "";
         teamTextSection.appendChild(fullNameDiv);
         teamTextSection.appendChild(messageDiv);
+        scrollToText();
     };
 
     const onClickMember = (index) => {
@@ -81,22 +87,55 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const membersArray = Array.from(members);
 
-        membersArray.forEach((member, memberIndex) => {
-            if (member.classList.contains("active"))
-                member.classList.remove("active");
-            if (memberIndex === index) {
-                member.classList.add("active");
-                showMemberText(index);
-            }
-        });
+        deactivateMember(membroAtivo);
+        activateMember(index);
+        membroAtivo = index;
 
         scrollToText();
+    };
+
+    const onClickArrow = (side) => {
+        const membros = document.getElementsByClassName("team-member");
+
+        if (side === "left") {
+            let novoMembroAtivo = membroAtivo - 1;
+            if (novoMembroAtivo < 0) novoMembroAtivo = membros.length - 1;
+            deactivateMember(membroAtivo);
+            activateMember(novoMembroAtivo);
+            membroAtivo = novoMembroAtivo;
+        } else if (side === "right") {
+            let novoMembroAtivo = membroAtivo + 1;
+            if (novoMembroAtivo >= membros.length) novoMembroAtivo = 0;
+            deactivateMember(membroAtivo);
+            activateMember(novoMembroAtivo);
+            membroAtivo = novoMembroAtivo;
+        }
+    };
+
+    const deactivateMember = (index) => {
+        const member = document.getElementById(`team-member-${index}`);
+        member.classList.remove("active");
+    };
+
+    const activateMember = (index) => {
+        const member = document.getElementById(`team-member-${index}`);
+        member.classList.add("active");
+
+        member.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+            inline: "center",
+        });
+
+        showMemberText(index);
     };
 
     const createMember = (member, index) => {
         const isFirst = index === 0;
         const isEven = (index + 1) % 2 === 0;
         const memberDiv = document.createElement("div");
+        memberDiv.id = `team-member-${index}`;
+
         const classes = ["team-member"];
         if (isFirst) classes.push("active");
         if (isEven) classes.push("even");
@@ -113,9 +152,23 @@ document.addEventListener("DOMContentLoaded", () => {
         memberDiv.appendChild(memberName);
         memberDiv.onclick = () => onClickMember(index);
 
-        teamMembersSection.item(0)?.appendChild(memberDiv);
+        teamMembersSection?.appendChild(memberDiv);
     };
 
+    function ajustarJustificacao() {
+        if (teamMembersSection?.scrollWidth > teamMembersSection?.clientWidth) {
+            teamMembersSection.classList.add("mobile");
+        } else {
+            teamMembersSection.classList.remove("mobile");
+        }
+    }
+
+    window.addEventListener("resize", ajustarJustificacao);
+
+    window.addEventListener("load", ajustarJustificacao);
+
+    teamLeftArrowBtn.onclick = () => onClickArrow("left");
+    teamRightArrowBtn.onclick = () => onClickArrow("right");
     membros.forEach((member, index) => createMember(member, index));
     showMemberText(0);
 });

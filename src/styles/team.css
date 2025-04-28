@@ -29,13 +29,18 @@
     & .team-members {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         width: 100%;
         gap: 20px;
 
         max-width: 100%;
         overflow: auto;
 
-        padding: 30px 20px 60px;
+        padding: 30px 50px 60px;
+
+        &.mobile {
+            justify-content: left;
+        }
 
         & .arrow {
             all: unset;
@@ -94,14 +99,12 @@
                 scale: 1.05;
             }
 
-            &.active,
-            &:hover {
-                text-decoration: underline;
-                text-decoration-color: var(--stone-100);
-            }
-
             &.active {
                 scale: 1.1;
+
+                & img {
+                    border: 3px solid white;
+                }
             }
         }
     }
