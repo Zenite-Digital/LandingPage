@@ -43,25 +43,7 @@ const membros = [
         texto: "Meu nome é Lucas Ribeiro, atualmente tenho 19 anos e curso Engenharia de Software no IFPR - Campus Paranavaí. Meu primeiro contato com desenvolvimento foi justamente na faculdade devido a uma curiosidade de trabalhar com isso durante o 2° grau no colégio. Atualmente, trabalho como programador trainee atuando em desenvlvimento back-end e tenho experiência em Java, JavaScript, TypeScript, Python, Dart, SQL, além de frameworks como Spring Boot, Nest, React e Flutter.",
         altText:
             "Lucas sorrindo, jovem, vestindo camisa branca, em ambiente interno com parede clara ao fundo.",
-    },
-    {
-        nome: "Victor",
-        sobrenome: "Martins",
-        cargo: "Desenvolvedor",
-        imagem: "./src/assets/imgs/team/victor.png",
-        texto: "Prazer, meu nome é Victor Martins, tenho 27 anos, sou formado em Engenharia Civil pela UNIPAR e atualmente curso Engenharia de Software no IFPR. Com forte base em lógica, planejamento e resolução de problemas, aplico esses conhecimentos no desenvolvimento de sistemas e projetos de engenharia. Tenho experiência com Java, Python, C++, Flutter e HTML, e participo de projetos acadêmicos completos, da análise à implementação. Sou motivado por desafios, aprendizado contínuo e pela criação de soluções relevantes.",
-        altText:
-            "Victor sorridente com barba, usando camiseta preta, em frente a fundo colorido e escuro.",
-    },
-    {
-        nome: "Danilo",
-        sobrenome: "Avelar",
-        cargo: "Desenvolvedor",
-        imagem: "./src/assets/imgs/team/danilo.png",
-        texto: "Sou estudante de Engenharia de Software no Instituto Federal do Paraná, com experiência em desenvolvimento de projetos utilizando Python, Java, JavaScript, Flutter, HTML e CSS. Além da formação acadêmica, atuo como autônomo no ramo de terraplanagem, o que reforça meu perfil proativo, responsável e focado em resultados. Busco aplicar minhas habilidades em tecnologia para desenvolver soluções práticas e eficientes, sempre com dedicação ao aprendizado contínuo.",
-        altText:
-            "Danilo sorridente usando camisa xadrez azul e chapéu de cowboy, em ambiente externo.",
-    },
+    }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
