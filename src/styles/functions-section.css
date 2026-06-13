@@ -9,6 +9,7 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: -10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .dark-theme .functions-title h2 {
@@ -21,6 +22,7 @@
     align-items: flex-start;
     margin-bottom: 24px;
     padding-left: 6%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .functions_column {

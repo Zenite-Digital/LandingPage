@@ -1,16 +1,18 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-    height: 100dvh;
-    width: 100dvw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
 }
 
 body {
@@ -22,12 +24,12 @@ body {
     flex-direction: column;
 
     scroll-margin-top: 200px;
+    font-family: 'poppins', sans-serif;
 }
 
 main {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .button {
@@ -61,4 +63,12 @@ main {
 
 html .dark-theme {
     background-color: var(--stone-800);
+}
+
+@media (max-width: 768px) {
+    html{
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
 }

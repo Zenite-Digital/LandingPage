@@ -9,17 +9,18 @@ header nav {
     display: flex;
     flex-direction: row;
 
-    padding: 20px 80px 20px 80px;
+    padding: 10px 30px 10px 30px;
 
     justify-content: space-between;
 
-    background: var(--header-background);
+    background: #216ad9;
 }
 
 #header-left-buttons {
     display: flex;
     gap: 10px;
     align-items: center;
+    color: white;
 }
 
 #header-right-buttons {
@@ -32,6 +33,7 @@ header nav {
 }
 
 .grouped-buttons {
+    gap: 10px;
     display: flex;
     align-items: center;
 }
@@ -51,25 +53,14 @@ header nav {
     padding: 4px 15px;
     min-width: 50px;
 
-    border: 1px solid var(--brand-border);
 
     cursor: pointer;
-    color: var(--stone-950);
+    color: white;
 
-    &:first-child {
-        border-radius: 1000px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
-    &:last-child {
-        border-radius: 1000px;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-    }
 
     &:hover {
-        background-color: #fff;
+        scale: 1.05;
+        text-decoration: underline;
     }
 }
 
@@ -83,7 +74,6 @@ header nav {
 
 .grouped-buttons button.active,
 .grouped-buttons button:active {
-    background-color: var(--brand);
     color: var(--brand-light);
 }
 
@@ -92,7 +82,13 @@ header nav {
         display: none;
     }
     header nav {
-        padding: 20px 20px 20px 20px;
+        padding: 10px 20px 10px 20px;
+        align-items: center;
+    }
+    
+    #header-left-buttons {
+        gap: 5px;
+        color: white;
     }
 
     .side-menu-container {

@@ -101,8 +101,8 @@
 
 .divider {
 	width: 100%;
-	height: 50px;
-	background-color: var(--brand);
+	height: 100px;
+	background-color: transparent;
 	margin: 0 auto;
 }
 
@@ -113,5 +113,9 @@
 @media screen and (max-width: 850px) {
 	.carrousel {
 		height: 80dvh;
+	}
+
+	.divider {
+		height: 100px;
 	}
 }

@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollToElement("product-button", "product");
     scrollToElement("contactButton", "contact");
     scrollToElement("team-button", "team");
+    scrollToElement("about-button", "saiba-mais");
 });
 
 function init() {}
