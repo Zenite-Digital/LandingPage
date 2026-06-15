@@ -10,7 +10,7 @@ const teamMembers = [
         name: "Eduardo Garcia",
         position: "Desenvolvedor de Software",
         description: "Inserir texto",
-        image: "./src/assets/imgs/team/eduardo.jpeg",
+        image: "./src/assets/imgs/team/eduardo2.jpeg",
         about: "Olá! Me chamo Eduardo, Estou me formando em Engenharia de Software no IFPR. Tenho experiência com as linguagens Python, Java, Dart e SQL. Atuo como Scrum Master no grupo Zênite Digital.",
     },
     {
