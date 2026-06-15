@@ -4,16 +4,15 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 	<!-- Open Graph -->
 	<meta property="og:title" content="GadOn - Seu App de Controle de Gado">
 	<meta property="og:description"
 		content="Gerencie sua propriedade com o GadOn, o app de gestão de pastagem mais eficiente.">
 	<meta property="og:image" content="./src/assets/icons/App icon.png">
 	<!-- <meta property="og:url" content="https://www.seusite.com"> Não tem url definida ainda-->
-	<meta property="og:type" content="website"
-	
-	>
+	<meta property="og:type" content="website">
 
 	<link rel="stylesheet" href="./src/styles/index.css" />
 	<link rel="stylesheet" href="./src/styles/root-styles.css" />
@@ -32,6 +31,8 @@
 	<link rel="stylesheet" href="./src/styles/hero.css">
 	<link rel="stylesheet" href="./src/styles/history.css">
 	<link rel="stylesheet" href="./src/styles/pillars.css">
+	<link rel="stylesheet" href="./src/styles/lideranca.css">
+	<script src="./src/scripts/lideranca.js"></script>
 	<script src="./src/scripts/index.js"></script>
 	<link rel="stylesheet" href="./src/styles/team.css">
 	<script src="./src/scripts/side-menu.js"></script>
@@ -43,13 +44,13 @@
 	<script src="./src/scripts/faq.js"></script>
 	<script src="./src/scripts/team.js"></script>
 	<script src="./src/scripts/index.js"></script>
-	<title>Zênite Digital</title>
+	<title>Team Zenite</title>
 </head>
 
 <body>
 	<header>
 		<nav>
-			<img src="./src/assets/icons/logo-azul.png" alt="Logo zenite" id="logo-header"
+			<img src="./src/assets/icons/logo-transparente.png" alt="Logo zenite" id="logo-header"
 				style="height: 40px; width: auto;">
 
 
@@ -59,8 +60,8 @@
 					<button id="product-button" title="" class="grouped-btn-header">Nossos
 						Produtos</button>
 					<button title="" class="grouped-btn-header" id="team-button">Quem Somos</button>
-					<button title="" class="grouped-btn-header" id="contactButton">Contato</button>
 					<button title="" class="grouped-btn-header" id="faqButton">FAQ</button>
+					<button title="" class="grouped-btn-header" id="contactButton">Contato</button>
 				</div>
 				<div id="header-left-buttons">
 					<div class="side-menu-container">
@@ -81,7 +82,8 @@
 				<p class="hero-description">
 					Buscamos sempre as melhores soluções para o agronegócio.
 				</p>
-				<button onclick="document.getElementById('about-divider').scrollIntoView({ behavior: 'smooth' })" class="hero-button">Conheça a Zenite</button>
+				<button onclick="document.getElementById('about-divider').scrollIntoView({ behavior: 'smooth' })"
+					class="hero-button">Conheça a Zenite</button>
 			</div>
 		</section>
 		<div class="divider" id="about-divider"></div>
@@ -143,10 +145,10 @@
 						<svg xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 740 740"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
 							<path
-								d="M304 70.1C313.1 61.9 326.9 61.9 336 70.1L568 278.1C577.9 286.9 578.7 302.1 569.8 312C560.9 321.9 545.8 322.7 535.9 313.8L527.9 306.6L527.9 511.9C527.9 547.2 499.2 575.9 463.9 575.9L175.9 575.9C140.6 575.9 111.9 547.2 111.9 511.9L111.9 306.6L103.9 313.8C94 322.6 78.9 321.8 70 312C61.1 302.2 62 287 71.8 278.1L304 70.1zM320 120.2L160 263.7L160 512C160 520.8 167.2 528 176 528L224 528L224 424C224 384.2 256.2 352 296 352L344 352C383.8 352 416 384.2 416 424L416 528L464 528C472.8 528 480 520.8 480 512L480 263.7L320 120.3zM272 528L368 528L368 424C368 410.7 357.3 400 344 400L296 400C282.7 400 272 410.7 272 424L272 528z" />
+								d="M96 288L96 480C96 497.7 110.3 512 128 512L160 512C177.7 512 192 497.7 192 480L192 391.8C201.9 398.4 212.6 403.8 224 407.9L224 432.1C224 440.9 231.2 448.1 240 448.1C248.8 448.1 256 440.9 256 432.1L256 415.2C261.3 415.8 266.6 416.1 272 416.1C277.4 416.1 282.7 415.8 288 415.2L288 432.1C288 440.9 295.2 448.1 304 448.1C312.8 448.1 320 440.9 320 432.1L320 407.9C331.4 403.9 342.1 398.5 352 391.8L352 480C352 497.7 366.3 512 384 512L416 512C433.7 512 448 497.7 448 480L448 320L480 352L480 401.5C480 411 482.8 420.2 488.1 428.1L530 491C538.8 504.1 553.5 512 569.3 512C591.8 512 611.2 496.1 615.6 474L635.9 372.4C638.5 359.4 635.6 345.9 627.9 335.1L624 329.6L624 248C624 234.7 613.3 224 600 224C586.7 224 576 234.7 576 248L576 262.4L523.1 188.3C496 150.5 452.4 128 405.9 128L144 128C77.7 128 24 181.7 24 248L24 302C9.4 313.8 0 331.8 0 352L0 369.6C0 377.6 6.4 384 14.4 384C46.2 384 72 358.2 72 326.4L72 248C72 223.7 84.1 202.2 102.5 189.1C98.3 199.9 96 211.7 96 224L96 288zM560 400C560 391.2 567.2 384 576 384C584.8 384 592 391.2 592 400C592 408.8 584.8 416 576 416C567.2 416 560 408.8 560 400zM166.6 230.6C162.4 226.4 160 220.6 160 214.6C160 202.1 170.1 192 182.6 192L361.3 192C373.8 192 383.9 202.1 383.9 214.6C383.9 220.6 381.5 226.4 377.3 230.6L353.9 254C332.2 275.8 302.7 288 272 288C241.3 288 211.8 275.8 190.1 254.1L166.7 230.7z" />
 						</svg>
 					</div>
-					<h3 class="pillar-card-title">Gestão de propriedade</h3>
+					<h3 class="pillar-card-title">Gestão de propriedade e animal</h3>
 					<p class="pillar-card-description">
 						Monitore e gerencie sua propriedade com precisão, desde o controle de lotes até a saúde do
 						rebanho, tudo em um só lugar.
@@ -154,16 +156,21 @@
 					<!-- <a href="#" class="pillar-link">
 						Saiba mais <i class="fas fa-arrow-right"></i>
 					</a> -->
-					<div class="card-watermark">
-						<i class="fas fa-tractor"></i>
+					<div class="card-watermark-small">
+						<svg xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 780 780"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+							<path
+								d="M96 288L96 480C96 497.7 110.3 512 128 512L160 512C177.7 512 192 497.7 192 480L192 391.8C201.9 398.4 212.6 403.8 224 407.9L224 432.1C224 440.9 231.2 448.1 240 448.1C248.8 448.1 256 440.9 256 432.1L256 415.2C261.3 415.8 266.6 416.1 272 416.1C277.4 416.1 282.7 415.8 288 415.2L288 432.1C288 440.9 295.2 448.1 304 448.1C312.8 448.1 320 440.9 320 432.1L320 407.9C331.4 403.9 342.1 398.5 352 391.8L352 480C352 497.7 366.3 512 384 512L416 512C433.7 512 448 497.7 448 480L448 320L480 352L480 401.5C480 411 482.8 420.2 488.1 428.1L530 491C538.8 504.1 553.5 512 569.3 512C591.8 512 611.2 496.1 615.6 474L635.9 372.4C638.5 359.4 635.6 345.9 627.9 335.1L624 329.6L624 248C624 234.7 613.3 224 600 224C586.7 224 576 234.7 576 248L576 262.4L523.1 188.3C496 150.5 452.4 128 405.9 128L144 128C77.7 128 24 181.7 24 248L24 302C9.4 313.8 0 331.8 0 352L0 369.6C0 377.6 6.4 384 14.4 384C46.2 384 72 358.2 72 326.4L72 248C72 223.7 84.1 202.2 102.5 189.1C98.3 199.9 96 211.7 96 224L96 288zM560 400C560 391.2 567.2 384 576 384C584.8 384 592 391.2 592 400C592 408.8 584.8 416 576 416C567.2 416 560 408.8 560 400zM166.6 230.6C162.4 226.4 160 220.6 160 214.6C160 202.1 170.1 192 182.6 192L361.3 192C373.8 192 383.9 202.1 383.9 214.6C383.9 220.6 381.5 226.4 377.3 230.6L353.9 254C332.2 275.8 302.7 288 272 288C241.3 288 211.8 275.8 190.1 254.1L166.7 230.7z" />
+						</svg>
 					</div>
 				</div>
 
 				<div class="pillar-card pillar-card-dark">
 					<div class="pillar-icon icon-dark">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 740">
-							<path fill="white"
-								d="M360 160L280 160C266.7 160 256 149.3 256 136C256 122.7 266.7 112 280 112L360 112C373.3 112 384 122.7 384 136C384 149.3 373.3 160 360 160zM360 208C397.1 208 427.6 180 431.6 144L448 144C456.8 144 464 151.2 464 160L464 512C464 520.8 456.8 528 448 528L192 528C183.2 528 176 520.8 176 512L176 160C176 151.2 183.2 144 192 144L208.4 144C212.4 180 242.9 208 280 208L360 208zM419.9 96C407 76.7 385 64 360 64L280 64C255 64 233 76.7 220.1 96L192 96C156.7 96 128 124.7 128 160L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 160C512 124.7 483.3 96 448 96L419.9 96z" />
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
+							fill="white"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+							<path
+								d="M192 96C156.7 96 128 124.7 128 160L128 384C128 419.3 156.7 448 192 448L544 448C579.3 448 608 419.3 608 384L608 160C608 124.7 579.3 96 544 96L192 96zM368 192C412.2 192 448 227.8 448 272C448 316.2 412.2 352 368 352C323.8 352 288 316.2 288 272C288 227.8 323.8 192 368 192zM192 216L192 168C192 163.6 195.6 160 200 160L248 160C252.4 160 256.1 163.6 255.5 168C251.9 197 228.9 219.9 200 223.5C195.6 224 192 220.4 192 216zM192 328C192 323.6 195.6 319.9 200 320.5C229 324.1 251.9 347.1 255.5 376C256 380.4 252.4 384 248 384L200 384C195.6 384 192 380.4 192 376L192 328zM536 223.5C507 219.9 484.1 196.9 480.5 168C480 163.6 483.6 160 488 160L536 160C540.4 160 544 163.6 544 168L544 216C544 220.4 540.4 224.1 536 223.5zM544 328L544 376C544 380.4 540.4 384 536 384L488 384C483.6 384 479.9 380.4 480.5 376C484.1 347 507.1 324.1 536 320.5C540.4 320 544 323.6 544 328zM80 216C80 202.7 69.3 192 56 192C42.7 192 32 202.7 32 216L32 480C32 515.3 60.7 544 96 544L488 544C501.3 544 512 533.3 512 520C512 506.7 501.3 496 488 496L96 496C87.2 496 80 488.8 80 480L80 216z" />
 						</svg>
 					</div>
 					<h3 class="pillar-card-title">Controle e emissão de notas fiscais</h3>
@@ -171,16 +178,19 @@
 						Emita e gerencie suas notas fiscais de forma simples e eficiente, garantindo conformidade
 						fiscal e agilidade nos processos administrativos.
 					</p>
-					<div class="card-watermark">
-						<i class="fas fa-clipboard-check"></i>
+					<div class="card-watermark-small">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 780"
+							fill="white"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+							<path
+								d="M192 96C156.7 96 128 124.7 128 160L128 384C128 419.3 156.7 448 192 448L544 448C579.3 448 608 419.3 608 384L608 160C608 124.7 579.3 96 544 96L192 96zM368 192C412.2 192 448 227.8 448 272C448 316.2 412.2 352 368 352C323.8 352 288 316.2 288 272C288 227.8 323.8 192 368 192zM192 216L192 168C192 163.6 195.6 160 200 160L248 160C252.4 160 256.1 163.6 255.5 168C251.9 197 228.9 219.9 200 223.5C195.6 224 192 220.4 192 216zM192 328C192 323.6 195.6 319.9 200 320.5C229 324.1 251.9 347.1 255.5 376C256 380.4 252.4 384 248 384L200 384C195.6 384 192 380.4 192 376L192 328zM536 223.5C507 219.9 484.1 196.9 480.5 168C480 163.6 483.6 160 488 160L536 160C540.4 160 544 163.6 544 168L544 216C544 220.4 540.4 224.1 536 223.5zM544 328L544 376C544 380.4 540.4 384 536 384L488 384C483.6 384 479.9 380.4 480.5 376C484.1 347 507.1 324.1 536 320.5C540.4 320 544 323.6 544 328zM80 216C80 202.7 69.3 192 56 192C42.7 192 32 202.7 32 216L32 480C32 515.3 60.7 544 96 544L488 544C501.3 544 512 533.3 512 520C512 506.7 501.3 496 488 496L96 496C87.2 496 80 488.8 80 480L80 216z" />
+						</svg>
 					</div>
 				</div>
 
 				<div class="pillar-card pillar-card-wide">
-					<div>	
-						<div class="card-watermark">
-							<img src="./src/assets/icons/logo.png" alt="Icone GadOn" style="width: 400px; height: auto;">
-						</div>
+					<div class="card-watermark">
+						<img src="./src/assets/icons/logo.png" alt="Icone GadOn"
+							style="width: 400px; height: auto; align-self: center;">
 					</div>
 					<div class="stats-container">
 						<div>
@@ -188,249 +198,300 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="pillar-card pillar-card-light">
+					<div class="pillar-icon icon-light">
+						<svg xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+							<path
+								d="M348 62.7C330.7 52.7 309.3 52.7 292 62.7L207.8 111.3C190.5 121.3 179.8 139.8 179.8 159.8L179.8 261.7L91.5 312.7C74.2 322.7 63.5 341.2 63.5 361.2L63.5 458.5C63.5 478.5 74.2 497 91.5 507L175.8 555.6C193.1 565.6 214.5 565.6 231.8 555.6L320.1 504.6L408.4 555.6C425.7 565.6 447.1 565.6 464.4 555.6L548.5 507C565.8 497 576.5 478.5 576.5 458.5L576.5 361.2C576.5 341.2 565.8 322.7 548.5 312.7L460.2 261.7L460.2 159.8C460.2 139.8 449.5 121.3 432.2 111.3L348 62.7zM296 356.6L296 463.1L207.7 514.1C206.5 514.8 205.1 515.2 203.7 515.2L203.7 409.9L296 356.6zM527.4 357.2C528.1 358.4 528.5 359.8 528.5 361.2L528.5 458.5C528.5 461.4 527 464 524.5 465.4L440.2 514C439 514.7 437.6 515.1 436.2 515.1L436.2 409.8L527.4 357.2zM412.3 159.8L412.3 261.7L320 315L320 208.5L411.2 155.9C411.9 157.1 412.3 158.5 412.3 159.9z" />
+						</svg>
+					</div>
+					<h3 class="pillar-card-title">O sistema do seu jeito</h3>
+					<p class="pillar-card-description">
+						Tenha um sistema que atenda as suas necessidades, escolha as funcionalidades que melhor se
+						adaptam ao seu negócio, e, adicione modulos que atendam às suas demandas.
+					</p>
+					<!-- <a href="#" class="pillar-link">
+						Saiba mais <i class="fas fa-arrow-right"></i>
+					</a> -->
+					<div class="card-watermark-small">
+						<svg xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+							<path
+								d="M348 62.7C330.7 52.7 309.3 52.7 292 62.7L207.8 111.3C190.5 121.3 179.8 139.8 179.8 159.8L179.8 261.7L91.5 312.7C74.2 322.7 63.5 341.2 63.5 361.2L63.5 458.5C63.5 478.5 74.2 497 91.5 507L175.8 555.6C193.1 565.6 214.5 565.6 231.8 555.6L320.1 504.6L408.4 555.6C425.7 565.6 447.1 565.6 464.4 555.6L548.5 507C565.8 497 576.5 478.5 576.5 458.5L576.5 361.2C576.5 341.2 565.8 322.7 548.5 312.7L460.2 261.7L460.2 159.8C460.2 139.8 449.5 121.3 432.2 111.3L348 62.7zM296 356.6L296 463.1L207.7 514.1C206.5 514.8 205.1 515.2 203.7 515.2L203.7 409.9L296 356.6zM527.4 357.2C528.1 358.4 528.5 359.8 528.5 361.2L528.5 458.5C528.5 461.4 527 464 524.5 465.4L440.2 514C439 514.7 437.6 515.1 436.2 515.1L436.2 409.8L527.4 357.2zM412.3 159.8L412.3 261.7L320 315L320 208.5L411.2 155.9C411.9 157.1 412.3 158.5 412.3 159.9z" />
+						</svg>
+					</div>
+				</div>
+
+				<div class="pillar-card pillar-card-light">
+					<div class="pillar-icon icon-light">
+						<svg xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+							<path
+								d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" />
+						</svg>>
+					</div>
+					<h3 class="pillar-card-title">Simulação de ganho de peso</h3>
+					<p class="pillar-card-description">
+						Saiba o melhor momento para vender seus animais com base em sua evolução de peso.
+					</p>
+					<!-- <a href="#" class="pillar-link">
+						Saiba mais <i class="fas fa-arrow-right"></i>
+					</a> -->
+					<div class="card-watermark-small">
+						<svg xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+							<path
+								d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" />
+						</svg>
+					</div>
+				</div>
+
+		</section>
+
+		<div class="divider"></div>
+
+		<section id="lideranca" class="lideranca-section">
+			<div class="container">
+				<div class="header">
+					<h1>Conheça nossa equipe</h1>
+					<p>Mentes focadas em cultivar a revolução digital.</p>
+				</div>
+
+				<div class="team-grid" id="teamGrid">
+				</div>
 			</div>
 		</section>
 
-		<div class="functions-title">
-			<h2>Funcionalidades</h2>
-			<p class="subititle">Descubra como o GadOn pode ajudar você a gerenciar seu rebanho de forma eficiente e
-				prática.</p>
-		</div>
-		<br>
-		<div class="functions">
-			<div class="functions_row">
-				<div class="functions_column">
-					<div class="card">
-						<div class="card-header">
-							<svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-								<path
-									d="M228.3 469.1L47.6 300.4c-4.2-3.9-8.2-8.1-11.9-12.4l87 0c22.6 0 43-13.6 51.7-34.5l10.5-25.2 49.3 109.5c3.8 8.5 12.1 14 21.4 14.1s17.8-5 22-13.3L320 253.7l1.7 3.4c9.5 19 28.9 31 50.1 31l104.5 0c-3.7 4.3-7.7 8.5-11.9 12.4L283.7 469.1c-7.5 7-17.4 10.9-27.7 10.9s-20.2-3.9-27.7-10.9zM503.7 240l-132 0c-3 0-5.8-1.7-7.2-4.4l-23.2-46.3c-4.1-8.1-12.4-13.3-21.5-13.3s-17.4 5.1-21.5 13.3l-41.4 82.8L205.9 158.2c-3.9-8.7-12.7-14.3-22.2-14.1s-18.1 5.9-21.8 14.8l-31.8 76.3c-1.2 3-4.2 4.9-7.4 4.9L16 240c-2.6 0-5 .4-7.3 1.1C3 225.2 0 208.2 0 190.9l0-5.8c0-69.9 50.5-129.5 119.4-141C165 36.5 211.4 51.4 244 84l12 12 12-12c32.6-32.6 79-47.5 124.6-39.9C461.5 55.6 512 115.2 512 185.1l0 5.8c0 16.9-2.8 33.5-8.3 49.1z" />
+		<div class="divider"></div>
+
+		<section class="faq-section" id="faq">
+			<div class="container">
+				<div class="faq-header">
+					<h2>Perguntas Frequentes</h2>
+					<p>Tudo o que você precisa saber sobre como nossa tecnologia impulsiona sua produção.</p>
+				</div>
+
+				<div class="faq-container">
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+							<span>Como o software se integra com o maquinário existente?</span>
+							<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<polyline points="6 9 12 15 18 9"></polyline>
 							</svg>
-							<h3>Controle de Saúde</h3>
-						</div>
-						<div class="card-content">
-							<p>Registre e acompanhe a saúde do seu rebanho com facilidade.</p>
+						</button>
+						<div class="faq-answer" id="faq-answer-1">
+							<p>Nosso software possui APIs abertas e compatibilidade com os principais protocolos do
+								mercado (ISO 11783, CAN Bus, entre outros). A integração é feita de forma simples e
+								rápida, sem necessidade de substituir seus equipamentos atuais. Nossa equipe técnica
+								fornece todo o suporte necessário durante o processo de implementação.</p>
 						</div>
 					</div>
-				</div>
-				<div class="functions_column">
-					<div class="card">
-						<div class="card-header">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="card-icon">
-								<path
-									d="M96 224l0 32 0 160c0 17.7 14.3 32 32 32l32 0c17.7 0 32-14.3 32-32l0-88.2c9.9 6.6 20.6 12 32 16.1l0 24.2c0 8.8 7.2 16 16 16s16-7.2 16-16l0-16.9c5.3 .6 10.6 .9 16 .9s10.7-.3 16-.9l0 16.9c0 8.8 7.2 16 16 16s16-7.2 16-16l0-24.2c11.4-4 22.1-9.4 32-16.1l0 88.2c0 17.7 14.3 32 32 32l32 0c17.7 0 32-14.3 32-32l0-160 32 32 0 49.5c0 9.5 2.8 18.7 8.1 26.6L530 427c8.8 13.1 23.5 21 39.3 21c22.5 0 41.9-15.9 46.3-38l20.3-101.6c2.6-13-.3-26.5-8-37.3l-3.9-5.5 0-81.6c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 14.4-52.9-74.1C496 86.5 452.4 64 405.9 64L272 64l-16 0-64 0-48 0C77.7 64 24 117.7 24 184l0 54C9.4 249.8 0 267.8 0 288l0 17.6c0 8 6.4 14.4 14.4 14.4C46.2 320 72 294.2 72 262.4l0-6.4 0-32 0-40c0-24.3 12.1-45.8 30.5-58.9C98.3 135.9 96 147.7 96 160l0 64zM560 336a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zM166.6 166.6c-4.2-4.2-6.6-10-6.6-16c0-12.5 10.1-22.6 22.6-22.6l178.7 0c12.5 0 22.6 10.1 22.6 22.6c0 6-2.4 11.8-6.6 16l-23.4 23.4C332.2 211.8 302.7 224 272 224s-60.2-12.2-81.9-33.9l-23.4-23.4z" />
+
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+							<span>É necessário ter conexão constante com a internet no campo?</span>
+							<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<polyline points="6 9 12 15 18 9"></polyline>
 							</svg>
-							<h3>Controle de Pastoreio</h3>
-						</div>
-						<div class="card-content">
-							<p>Gerencie o pastoreio do seu rebanho de forma eficiente, planejando a rotação de pastos e
-								garantindo a saúde do solo e dos animais.</p>
+						</button>
+						<div class="faq-answer" id="faq-answer-2">
+							<p>Não. Nossa plataforma funciona de forma offline no campo, sincronizando os dados
+								automaticamente quando houver conexão disponível. Você pode coletar dados, monitorar
+								operações e tomar decisões mesmo em áreas sem cobertura de internet. A sincronização
+								ocorre de forma automática assim que a conexão é restabelecida.</p>
 						</div>
 					</div>
 
-				</div>
-
-				<div class="functions_column">
-					<div class="card">
-						<div class="card-header">
-							<svg xmlns="http://www.w3.org/2000/svg" class="card-icon" viewBox="0 0 512 512">
-
-								<path
-									d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+							<span>Como os dados da minha fazenda são protegidos?</span>
+							<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<polyline points="6 9 12 15 18 9"></polyline>
 							</svg>
-							<h3>Funcionalidade 3</h3>
+						</button>
+						<div class="faq-answer" id="faq-answer-3">
+							<p>Utilizamos criptografia de ponta a ponta (AES-256) e seguimos as melhores práticas de
+								segurança da informação. Seus dados são armazenados em servidores certificados com ISO
+								27001, com backup automático e redundância. Além disso, você tem controle total sobre
+								quem pode acessar as informações através de permissões granulares e autenticação de dois
+								fatores.</p>
 						</div>
-						<div class="card-content">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tempore dolore veritatis
-								id ea aspernatur sed nulla deleniti voluptas, fugiat repudiandae perferendis debitis
-								neque atque magnam sint officiis quo corrupti!</p>
+					</div>
+
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+							<span>A AgroTech oferece treinamento para a equipe da fazenda?</span>
+							<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg>
+						</button>
+						<div class="faq-answer" id="faq-answer-4">
+							<p>Sim! Oferecemos treinamento completo e personalizado para toda a sua equipe, incluindo
+								operadores, gestores e técnicos. O treinamento pode ser realizado presencialmente na
+								fazenda ou de forma remota, conforme sua preferência. Também disponibilizamos material
+								didático, tutoriais em vídeo e suporte contínuo para garantir a melhor experiência.</p>
+						</div>
+					</div>
+
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+							<span>Quais são os requisitos mínimos de hardware?</span>
+							<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg>
+						</button>
+						<div class="faq-answer" id="faq-answer-5">
+							<p>Nossa plataforma é baseada em nuvem e pode ser acessada através de qualquer dispositivo
+								com navegador moderno (computadores, tablets ou smartphones). Para operações em campo,
+								recomendamos tablets ou smartphones com Android 8.0+ ou iOS 12+, com pelo menos 2GB de
+								RAM e conexão GPS. Trabalhamos também com monitores de cabine compatíveis com as
+								principais marcas do mercado.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="functions-title">
-			<h2>Avaliações</h2>
-			<p class="subititle">Veja o que nossos clientes estão achando do GadOn.</p>
-		</div>
+		</section>
 
-		<div class="feedback-section">
-			<div class="feedback-container">
-				<div class="feedback-cards">
-					<div class="card">
-						<div class="feedback-card-header">
-							<img src="https://thispersondoesnotexist.com/" alt="person">
-							<div class="feedback-user-info">
-								<h3>Placeholder</h3>
-								<p>Placeholder</p>
-							</div>
-						</div>
-						<div class="feedback-card-content">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
-								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
-								odio, illum ratione at nisi mollitia.
-							</p>
-						</div>
-					</div>
-
-					<div class="card">
-						<div class="feedback-card-header">
-							<img src="https://thispersondoesnotexist.com/" alt="person">
-							<div class="feedback-user-info">
-								<h3>Placeholder</h3>
-								<p>Placeholder</p>
-							</div>
-						</div>
-						<div class="feedback-card-content">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
-								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
-								odio, illum ratione at nisi mollitia.
-							</p>
-						</div>
-					</div>
-
-					<div class="card">
-						<div class="feedback-card-header">
-							<img src="https://thispersondoesnotexist.com/" alt="person">
-							<div class="feedback-user-info">
-								<h3>Placeholder</h3>
-								<p>Placeholder</p>
-							</div>
-						</div>
-						<div class="feedback-card-content">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
-								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
-								odio, illum ratione at nisi mollitia.
-							</p>
-						</div>
-					</div>
-
-					<div class="card">
-						<div class="feedback-card-header">
-							<img src="https://thispersondoesnotexist.com/" alt="person">
-							<div class="feedback-user-info">
-								<h3>Placeholder</h3>
-								<p>Placeholder</p>
-							</div>
-						</div>
-						<div class="feedback-card-content">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt eum a labore
-								eveniet dolor, perspiciatis eos facere minima vel magni corrupti repellendus, natus
-								odio, illum ratione at nisi mollitia.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="plans-container">
-			<h2>Nossos Planos</h2>
-			<div class="plans-section">
-				<div class="plan-card">
-					<h3>Plano Platinum</h3>
-					<p class="price">R$55<span>/mês</span></p>
-					<p class="description">Perfeito para grandes propriedades</p>
-					<ul>
-						<li>Acesso completo a todas as funcionalidades</li>
-						<li>Suporte 24/7</li>
-						<li>Relatórios personalizados</li>
-					</ul>
-					<button class="subscribe-btn">Assinar Agora</button>
-				</div>
-				<div class="plan-card">
-					<h3>Plano Platinum</h3>
-					<p class="price">R$55<span>/mês</span></p>
-					<p class="description">Perfeito para grandes propriedades</p>
-					<ul>
-						<li>Acesso completo a todas as funcionalidades</li>
-						<li>Suporte 24/7</li>
-						<li>Relatórios personalizados</li>
-					</ul>
-					<button class="subscribe-btn">Assinar Agora</button>
-				</div>
-				<div class="plan-card">
-					<h3>Plano Platinum</h3>
-					<p class="price">R$55<span>/mês</span></p>
-					<p class="description">Perfeito para grandes propriedades</p>
-					<ul>
-						<li>Acesso completo a todas as funcionalidades</li>
-						<li>Suporte 24/7</li>
-						<li>Relatórios personalizados</li>
-					</ul>
-					<button class="subscribe-btn">Assinar Agora</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="team-section" id="team">
-			<div class="header">
-				<h2 class="title">Quem Somos</h2>
-			</div>
-			<div class="team-members">
-				<button class="arrow left" id="team-left-arrow" alt="Membro anterior">&#10094</button>
-				<button class="arrow right" id="team-right-arrow" alt="Próximo membro">&#10095</button>
-			</div>
-			<div class="team-text">
-			</div>
-		</div>
+		<div class="divider"></div>
 
 		<div id="contact" class="contact-section">
-			<h2>Contato</h2>
-			<p class="subititle">Entre em contato conosco para mais informações.</p>
-			<form action="[precisa definir o email de contato]" method="post" enctype="text/plain" class="contact-form">
-				<label for="name">Nome:</label>
-				<input type="text" id="name" name="name" placeholder="Seu nome" required
-					aria-label="Campo para digitar seu nome"
-					oninvalid="this.setCustomValidity('Por favor, preencha este campo.')"
-					oninput="this.setCustomValidity('')" />
+			<div class="container">
+				<div class="contact-header">
+					<h2>Vamos Cultivar Novas Ideias Juntos</h2>
+					<p>Estamos prontos para otimizar sua produção com tecnologia de ponta. Entre em contato para saber
+						como podemos transformar seu agronegócio.</p>
+				</div>
 
-				<label for="email">E-mail:</label>
-				<input type="email" id="email" name="email" placeholder="Seu e-mail" required
-					aria-label="Campo para digitar seu e-mail"
-					oninvalid="this.setCustomValidity('Por favor, informe um e-mail válido')"
-					oninput="this.setCustomValidity('')" />
+				<div class="contact-content">
+					<div class="contact-info-column">
+						<div class="info-card">
+							<div class="info-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round">
+									<rect width="20" height="16" x="2" y="4" rx="2" />
+									<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+								</svg>
+							</div>
+							<div class="info-details">
+								<h3>E-mail</h3>
+								<p><a href="mailto:contato@agritechsolutions.com.br">contato@teamzenite.com</a>
+								</p>
+							</div>
+						</div>
 
-				<label for="message">Mensagem:</label>
-				<textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required maxlength="200"
-					aria-label="Campo para digitar a sua mensagem"
-					oninvalid="this.setCustomValidity('Por favor, preencha este campo')"
-					oninput="this.setCustomValidity('')"></textarea>
+						<!-- <div class="info-card">
+							<div class="info-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round">
+									<path
+										d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+								</svg>
+							</div>
+							<div class="info-details">
+								<h3>Telefone</h3>
+								<p><a href="tel:+5511987654321">+55 (44) 99999-9999</a></p>
+							</div>
+						</div> -->
 
-				<button type="submit" class="button" accesskey="s">Enviar (Alt+Shift+S)</button>
-			</form>
-			<div class="contact-info">
-				<p>E-mail: <a href="mailto:aiai@email.com">aiai@email.com</a></p>
-				<p>WhatsApp: <a href="https://wa.me/[numeroWhatsapp]" target="_blank">[número de contato a definir]</a>
-				</p>
-			</div>
-		</div>
+						<div class="info-card">
+							<div class="info-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round">
+									<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+									<circle cx="12" cy="10" r="3" />
+								</svg>
+							</div>
+							<div class="info-details">
+								<h3>Endereço</h3>
+								<p>Av. José Felipe Tequinha, 1400 - Jardim das Nacoes <br>Paranavaí, PR </p>
+							</div>
+						</div>
 
-		<div id="faq" class="faq-section">
-			<div class="faq-title">
-				<h2>FAQ</h2>
-				<p class="subititle">Perguntas frequentes.</p>
-			</div>
-			<!-- 
-			<div class="faq-accordions">
-				<div class="accordions">
-					<div id="header-faq" class="accordion-header">
-						<h3 id="faq-title" class="accordion-title">
-
-						</h3>
-						<span class="accordion-icon">▲</span>
+						<div class="map-container">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.169110595475!2d-52.4543259!3d-23.0542609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949296a233a74981%3A0x8aed8519780a4c71!2sIFPR%20-%20Instituto%20Federal%20do%20Paran%C3%A1%20-%20Campus%20Paranava%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1781555172513!5m2!1spt-BR!2sbr"
+								width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade">
+							</iframe>
+						</div>
 					</div>
-					<div id="resposta-faq" class="accordion-content">
-						<p>
 
-						</p>
+					<div class="contact-form-column">
+						<div class="form-container">
+							<h3>Envie sua Mensagem</h3>
+							<form action="[precisa definir o email de contato]" method="post" enctype="text/plain"
+								class="contact-form">
+								<div class="form-row">
+									<div class="form-group">
+										<label for="name">Nome Completo</label>
+										<input type="text" id="name" name="name" placeholder="Seu nome" required
+											aria-label="Campo para digitar seu nome completo"
+											oninvalid="this.setCustomValidity('Por favor, preencha este campo.')"
+											oninput="this.setCustomValidity('')" />
+									</div>
+									<div class="form-group">
+										<label for="email">E-mail</label>
+										<input type="email" id="email" name="email" placeholder="nome@email.com"
+											required aria-label="Campo para digitar seu e-mail"
+											oninvalid="this.setCustomValidity('Por favor, informe um e-mail válido')"
+											oninput="this.setCustomValidity('')" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="subject">Assunto</label>
+									<select id="subject" name="subject" required aria-label="Selecione o assunto">
+										<option value="">Selecione um assunto</option>
+										<option value="consultoria">Sistema de Gestão</option>
+										<option value="parceria">Quero um sistema</option>
+										<option value="suporte">Suporte Técnico</option>
+										<option value="outro">Outro</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="message">Como podemos ajudar?</label>
+									<textarea id="message" name="message"
+										placeholder="Descreva seu projeto ou dúvida..." rows="5" required
+										maxlength="500" aria-label="Campo para digitar a sua mensagem"
+										oninvalid="this.setCustomValidity('Por favor, preencha este campo')"
+										oninput="this.setCustomValidity('')"></textarea>
+								</div>
+
+								<button type="submit" class="submit-button" accesskey="s">
+									Enviar Mensagem
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+										fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round">
+										<line x1="22" x2="11" y1="2" y2="13" />
+										<polygon points="22 2 15 22 11 13 2 9 22 2" />
+									</svg>
+								</button>
+
+								<p class="form-note">* Respondemos geralmente em até 24 horas úteis.</p>
+							</form>
+						</div>
 					</div>
 				</div>
-			</div>			 -->
+			</div>
 		</div>
+
+
 	</main>
 	<div id="side-menu-nav-container">
 		<div id="navigation-backdrop"></div>
@@ -438,8 +499,9 @@
 		<div class="side-navigation-menu" id="side-menu">
 			<a href="javascript:void(0)" class="side-menu-close-btn" onclick="closeNav()">&times;</a>
 			<div class="side-menu-content">
-				<a onclick="closeNav()" href="#" class="side-menu-logo"><img src="./src/assets/icons/icon.png"
+				<a onclick="closeNav()" href="#" class="side-menu-logo"><img src="./src/assets/icons/logo-azul.png"
 						alt="Logo GadOn"></a>
+				<a onclick="closeNav()" href="#about-divider">Nossa História</a>
 				<a onclick="closeNav()" href="#product">Nossos Produtos</a>
 				<a onclick="closeNav()" href="#team">Quem Somos</a>
 				<a onclick="closeNav()" href="#contact">Contato</a>
@@ -450,56 +512,65 @@
 	<footer class="footer">
 		<div class="footer-container">
 			<div class="footer-content">
-				<div class="footer-column">
-					<h3>Veja mais</h3>
-					<p>Os projetos da Zênite Digital estão em constante evolução, quer saber mais?</p>
-					<div class="social-icons">
-						<a href="https://github.com/Zenite-Digital" target="_blank" aria-label="GitHub">
-							<i class="icon">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-									fill="currentColor">
-									<path
-										d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577v-2.234c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.744.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.774.418-1.305.762-1.605-2.665-.305-5.467-1.333-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 013.003-.404c1.02.005 2.045.138 3.003.404 2.292-1.552 3.3-1.23 3.3-1.23.653 1.653.241 2.873.118 3.176.77.84 1.236 1.912 1.236 3.222 0 4.61-2.807 5.623-5.478 5.92.43.37.823 1.102.823 2.222v3.293c0 .32.192.694.8.577C20.565 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-								</svg>
-							</i></svg></i>
-						</a>
-					</div>
+				<div class="footer-column brand-column">
+					<h3>Team Zenite</h3>
+					<p>Transformando o campo através da tecnologia.</p>
 				</div>
 
 				<div class="footer-column">
-					<h3>Links úteis</h3>
+					<h3>LINKS</h3>
 					<ul class="footer-links">
-						<li><a href="./src/not-found.html">Suporte</a></li>
-						<li><a href="./src/politica.html">Política de Privacidade</a></li>
-						<li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
-								target="_blank">LGPD</a></li>
-						<li><a href="https://ifpr.edu.br/paranavai/" target="_blank">IFPR - Paranavaí</a></li>
+						<li><a href="#about-divider">Sobre Nós</a></li>
+						<li><a href="#product">Conheça o GadOn</a></li>
+						<li><a href="#contact">Quero um sistema</a></li>
 					</ul>
 				</div>
 
 				<div class="footer-column">
-					<h3>Contatos</h3>
-					<div class="contact-info">
-						<p><i class="icon">📍</i> Av. José Felipe Tequinha, 1400 - Jardim das Nacoes, Paranavaí - PR</p>
-						<p><i class="icon">📞</i> +55 (44) 99999-9999</p>
-						<p><i class="icon">✉️</i> email@zenitedigital.com</p>
-					</div>
+					<h3>LEGAL</h3>
+					<ul class="footer-links">
+						<li><a href="./src/politica.html">Políticas de Privacidade</a></li>
+						<li><a href="#">Termos de Uso</a></li>
+					</ul>
 				</div>
 
 				<div class="footer-column">
-					<h3>Novidades!</h3>
-					<p>Receba novidades sobre nossos produtos.</p>
-					<form id="newsletter-form" class="newsletter-form">
-						<input type="email" id="email-input" placeholder="Seu melhor e-mail" required>
-						<button type="submit">Enviar</button>
-					</form>
-					<div id="error-message" class="error-message">Por favor insira um e-mail válido.</div>
+					<h3>SUPORTE</h3>
+					<ul class="footer-links">
+						<li><a href="#">Suporte Técnico</a></li>
+						<li><a href="#">Contato</a></li>
+					</ul>
 				</div>
 			</div>
 
 			<div class="footer-bottom">
-				<p>&copy; <span id="current-year"></span> Team Zênite. Todos os direitos reservados.</p>
-				<p>Feito com ❤️ para você</p>
+				<div class="footer-bottom-content">
+					<p>© 2026 Team Zenite. Cultivando o futuro hoje.</p>
+					<div class="footer-icons">
+						<a href="#" aria-label="Globe">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round">
+								<circle cx="12" cy="12" r="10"></circle>
+								<line x1="2" y1="12" x2="22" y2="12"></line>
+								<path
+									d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+								</path>
+							</svg>
+						</a>
+						<a href="#" aria-label="Share">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round">
+								<circle cx="18" cy="5" r="3"></circle>
+								<circle cx="6" cy="12" r="3"></circle>
+								<circle cx="18" cy="19" r="3"></circle>
+								<line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+								<line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+							</svg>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>

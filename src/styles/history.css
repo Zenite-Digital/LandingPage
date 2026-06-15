@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    align-items: start;
+    align-items: start
 }
 
 .history-content {
@@ -78,16 +78,35 @@
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 40px 20px;
-    }
-
     .history-section {
         grid-template-columns: 1fr;
         gap: 40px;
+        padding: 40px; 
+        box-sizing: border-box;
+    }
+
+    .history-content {
+        padding: 0; 
+        text-align: justify; 
+    }
+
+    .history-text { 
+        word-wrap: break-word; 
     }
 
     .mission-card {
         padding: 30px;
+        text-align: justify;
+    }
+
+    .tags-container {
+        justify-content: flex-start; 
+        flex-wrap: wrap; 
+        gap: 8px;
+        flex-direction: column;
+    }
+    
+    .tag {
+        margin: 0 auto; 
     }
 }

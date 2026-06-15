@@ -141,6 +141,17 @@
     color: #999;
 }
 
+.card-watermark-small {
+    position: absolute;
+    height: auto;
+    width: 150px;
+    bottom: -26px;
+    right: -13px;
+    font-size: 60px;
+    opacity: 0.1;
+    color: #999;
+}
+
 .prot-btn {
     padding: 25px 64px;
     color: #575757;
@@ -190,8 +201,9 @@
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 40px 20px;
+
+    .pillars-section {
+        padding: 40px;
     }
 
     .pillars-grid {
@@ -216,5 +228,19 @@
         align-items: center;
         justify-content: center;
         display: flex;
+    }
+
+    .pillar-card-wide {
+        display: grid;
+        grid-auto-flow: row;
+        align-content: space-between;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+
+    }
+
+    .card-watermark {
+        scale: 0.8;
     }
 }

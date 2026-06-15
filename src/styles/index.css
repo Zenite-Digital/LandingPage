@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 html {
@@ -16,8 +16,8 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 
     display: flex;
     flex-grow: 1;
@@ -69,6 +69,12 @@ html .dark-theme {
     html{
         margin: 0;
         padding: 0;
+        display: flex;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
         display: flex;
     }
 }

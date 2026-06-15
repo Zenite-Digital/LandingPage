@@ -35,6 +35,7 @@
     color: var(--stone-950);
     display: block;
     transition: 0.3s;
+    font-family: 'poppins', sans-serif;
 }
 
 .side-navigation-menu :hover {
@@ -57,7 +58,8 @@
 }
 
 .side-menu-logo img {
-    width: 25%;
+    width: 20%;
+    border-radius: 25%;
     display: flex;
     justify-content: center;
     align-items: center;

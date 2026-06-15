@@ -1,0 +1,176 @@
+.lideranca-section * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lideranca-section {
+    font-family: 'poppins', sans-serif;
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+}
+
+.lideranca-section .container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.lideranca-section .header {
+    text-align: flex;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.lideranca-section .header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.lideranca-section .header p {
+    text-align: start;
+    font-size: 1.25rem;
+    color: #7f8c8d;
+    max-width: 600px;
+}
+
+.lideranca-section .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.lideranca-section .team-member {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.lideranca-section .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.lideranca-section .photo-container {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background: #e0e0e0;
+}
+
+.lideranca-section .photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.lideranca-section .team-member:hover .photo-container img {
+    transform: scale(1.15);
+    filter: brightness(0.4);
+}
+
+.lideranca-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    text-align: center;
+}
+
+.lideranca-section .team-member:hover .overlay {
+    opacity: 1;
+}
+
+.lideranca-section .overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    transform: translateY(20px);
+    transition: transform 0.5s ease;
+}
+
+.lideranca-section .overlay .position {
+    font-size: 1rem;
+    color: #3498db;
+    margin-bottom: 15px;
+    font-weight: 600;
+    transform: translateY(20px);
+    transition: transform 0.5s ease 0.1s;
+}
+
+.lideranca-section .overlay .description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    transform: translateY(20px);
+    transition: transform 0.5s ease 0.2s;
+}
+
+.lideranca-section .team-member:hover .overlay h3,
+.lideranca-section .team-member:hover .overlay .position,
+.lideranca-section .team-member:hover .overlay .description {
+    transform: translateY(0);
+}
+
+.lideranca-section .member-info {
+    padding: 25px;
+}
+
+.lideranca-section .member-info h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.lideranca-section .member-info .position {
+    font-size: 0.95rem;
+    color: #3498db;
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.lideranca-section .member-info .description {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+
+    .lideranca-section .header {
+        text-align: start;
+        margin-left: 0;
+    }
+
+
+    .lideranca-section .header h1 {
+        font-size: 2rem;
+    }
+
+    .lideranca-section .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .lideranca-section .photo-container {
+        height: 280px;
+    }
+}
