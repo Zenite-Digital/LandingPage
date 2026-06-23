@@ -1,6 +1,6 @@
 .contact-section {
     padding: 60px 20px;
-    background-color: var(--stone-100, #ffffff);
+    /* background-color: var(--stone-100, #ffffff); */
 }
 
 .dark-theme .contact-section {
@@ -71,7 +71,7 @@
 .info-icon {
     width: 48px;
     height: 48px;
-    background: var(--brand, #166534);
+    background: #216ad9;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -113,7 +113,7 @@
 }
 
 .info-details a:hover {
-    color: var(--brand, #166534);
+    color: #216ad9;
 }
 
 .map-container {
@@ -201,8 +201,8 @@
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--brand, #166534);
-    box-shadow: 0 0 0 3px rgba(22, 101, 52, 0.1);
+    border-color: #216ad9;
+    box-shadow: 0 0 0 3px rgba(33, 106, 217, 0.1);
 }
 
 .form-group textarea {
@@ -228,7 +228,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: var(--brand, #166534);
+    background: #216ad9;
     color: white;
     border: none;
     padding: 16px 32px;

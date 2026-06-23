@@ -3,7 +3,7 @@ const membros = [
         nome: "Arthur",
         sobrenome: "Ricken",
         cargo: "Product Owner",
-        imagem: "./src/assets/imgs/team/tui_2.jpeg",
+        imagem: "./src/assets/imgs/team/tui.jpeg",
         texto: "Olá!! Me chamo Arthur, estou cursando Engenharia de Software no IFPR-Campus-Paranavaí, onde foi meu primeiro contato com desenvolvimento de software e afins. Minhas experiencias foram no Campus, sendo elas tendo contato com as linguagens: Java, Python, Dart, JavaScript, CSS, C++, HTML e SQL. Atuo como PO no grupo Zênite Digital. Além disso trabalho com o ramo agro, sendo o foco principal na pecuária.",
         altText:
             "Arthur montado em um boi branco em um gramado, usando chapéu de palha, camiseta cinza e calça jeans, com árvores ao fundo.",
@@ -39,7 +39,7 @@ const membros = [
         nome: "Lucas",
         sobrenome: "Ribeiro",
         cargo: "Desenvolvedor",
-        imagem: "./src/assets/imgs/team/luscas.png",
+        imagem: "./src/assets/imgs/team/Lucas.png",
         texto: "Meu nome é Lucas Ribeiro, atualmente tenho 19 anos e curso Engenharia de Software no IFPR - Campus Paranavaí. Meu primeiro contato com desenvolvimento foi justamente na faculdade devido a uma curiosidade de trabalhar com isso durante o 2° grau no colégio. Atualmente, trabalho como programador trainee atuando em desenvlvimento back-end e tenho experiência em Java, JavaScript, TypeScript, Python, Dart, SQL, além de frameworks como Spring Boot, Nest, React e Flutter.",
         altText:
             "Lucas sorrindo, jovem, vestindo camisa branca, em ambiente interno com parede clara ao fundo.",
