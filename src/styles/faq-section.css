@@ -123,18 +123,18 @@
 
     .faq-question {
         padding: 20px;
-        font-size: 1.45rem;
+        font-size: 1.8rem;
     }
 
     .faq-answer p {
         padding: 0 20px 20px 20px;
-        font-size: 1.25rem;
+        font-size: 1.45rem;
     }
 }
 
 @media (max-width: 480px) {
     .faq-header h2 {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     .faq-question {
