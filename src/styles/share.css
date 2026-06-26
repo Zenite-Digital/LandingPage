@@ -1,0 +1,262 @@
+.share-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.share-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    color: var(--stone-600, #57534e);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.share-trigger:hover {
+    background: rgba(33, 106, 217, 0.1);
+    color: #216ad9;
+}
+
+.dark-theme .share-trigger {
+    color: #a8a29e;
+}
+
+.dark-theme .share-trigger:hover {
+    background: rgba(33, 106, 217, 0.2);
+    color: #216ad9;
+}
+
+.share-menu {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    width: 280px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    border: 1px solid var(--stone-200, #e7e5e4);
+}
+
+.dark-theme .share-menu {
+    background: var(--stone-700, #292524);
+    border-color: var(--stone-600, #44403c);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.share-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.share-menu::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-right: 1px solid var(--stone-200, #e7e5e4);
+    border-bottom: 1px solid var(--stone-200, #e7e5e4);
+}
+
+.dark-theme .share-menu::after {
+    background: var(--stone-700, #292524);
+    border-color: var(--stone-600, #44403c);
+}
+
+.share-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--stone-200, #e7e5e4);
+}
+
+.dark-theme .share-menu-header {
+    border-bottom-color: var(--stone-600, #44403c);
+}
+
+.share-menu-header span {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--stone-900, #1c1917);
+}
+
+.dark-theme .share-menu-header span {
+    color: #fff;
+}
+
+.share-menu-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--stone-500, #78716c);
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.share-menu-close:hover {
+    background: var(--stone-100, #f5f5f4);
+    color: var(--stone-900, #1c1917);
+}
+
+.dark-theme .share-menu-close:hover {
+    background: var(--stone-600, #44403c);
+    color: #fff;
+}
+
+.share-menu-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.share-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 8px;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.share-menu-item:hover {
+    background: var(--stone-100, #f5f5f4);
+    transform: translateY(-2px);
+}
+
+.dark-theme .share-menu-item:hover {
+    background: var(--stone-600, #44403c);
+}
+
+.share-menu-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.share-menu-icon.whatsapp {
+    background: rgba(37, 211, 102, 0.1);
+    color: #25D366;
+}
+
+.share-menu-icon.facebook {
+    background: rgba(24, 119, 242, 0.1);
+    color: #1877F2;
+}
+
+.share-menu-icon.twitter {
+    background: rgba(0, 0, 0, 0.08);
+    color: #000;
+}
+
+.dark-theme .share-menu-icon.twitter {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.share-menu-icon.linkedin {
+    background: rgba(10, 102, 194, 0.1);
+    color: #0A66C2;
+}
+
+.share-menu-icon.copy {
+    background: rgba(33, 106, 217, 0.1);
+    color: #216ad9;
+}
+
+.share-menu-icon.email {
+    background: rgba(234, 67, 53, 0.1);
+    color: #EA4335;
+}
+
+.share-menu-item span {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--stone-700, #44403c);
+}
+
+.dark-theme .share-menu-item span {
+    color: #e7e5e4;
+}
+
+.share-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--stone-900, #1c1917);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.dark-theme .share-toast {
+    background: #fff;
+    color: var(--stone-900, #1c1917);
+}
+
+.share-toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.share-toast svg {
+    color: #22c55e;
+}
+
+@media (max-width: 480px) {
+    .share-menu {
+        width: 260px;
+        left: auto;
+        right: 0;
+        transform: translateX(0) translateY(10px);
+    }
+
+    .share-menu.active {
+        transform: translateX(0) translateY(0);
+    }
+
+    .share-menu::after {
+        left: auto;
+        right: 16px;
+        transform: rotate(45deg);
+    }
+}
